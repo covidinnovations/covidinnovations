@@ -1,22 +1,11 @@
 enable  : true
-item    :
-# Why
-  - positionRight : false
-    image : motifs/undraw_experience_design_eq3j.svg
-    title : Introducing Adlets
-    description : >
-      Adlets are a new digital ad format that opens up new opportunities for advertisers and marketers.
-      With Adlets, you can create rich animations and interactive experiences.
-    link: blog
-    cta:  Learn More
-# How
-  - positionRight : true
-    image : motifs/undraw_abstract_x68e.svg
-    title : Runs on WebAssembly
-    description : >
-      Adlets are built with a technology called WebAssembly that is supported in every modern web browser.
-      WebAssembly offers greater performance and a better user experience that feels more like a
-      native app.
-    link: showcase
-    cta:  See Demos
-
+title   : COVID Innovations
+description : >
+  The Coronavirus creates urgent demand for specialized technologies in airports, quarantine zones,
+  hospitals, logistic supply, prisons,... Companies have been coming up with solutions that can be
+  replicated in other countries, granted that they can match and talk to the buyers directly. We
+  want to facilitate the exchange of technology by opening up an open, public database of
+  COVID-19 innovations. Suppliers of tech solutions can directly post their details online, and be
+  openly searched and browsed by anyone who has a demand, in a peer-to-peer fashion.
+link: blog
+cta:  Learn More

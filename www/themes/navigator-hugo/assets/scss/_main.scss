@@ -251,12 +251,12 @@ a {
 	&:focus {
 		text-decoration: none;
 		outline: 0;
-		color: $site_orange;
+		color: $default_tint;
 	}
 	&:hover {
 		text-decoration: none;
 		outline: 0;
-		color: $site_orange;
+		color: $default_tint;
 	}
 }
 
@@ -284,7 +284,7 @@ iframe {
 
 .btn-main {
 	background-color: $background_color_1;
-	background-image: linear-gradient(100deg, $btn_grad_left, $site_orange);
+	background-image: linear-gradient(100deg, $btn_grad_left, $default_tint);
 	color: white;
 	display: inline-block;
 	font-size: 14px;
@@ -299,7 +299,7 @@ iframe {
 }
 .btn-main-sm {
 	background-color: $background_color_1;
-	background-image: linear-gradient(100deg, $btn_grad_left, $site_orange);
+	background-image: linear-gradient(100deg, $btn_grad_left, $default_tint);
 	color: white;
 	display: inline-block;
 	font-size: 14px;
@@ -357,7 +357,7 @@ iframe {
 		position: relative;
 		width: 90px;
 		margin-bottom: 10px;
-		background-image: linear-gradient(100deg, $btn_grad_left, $site_orange);
+		background-image: linear-gradient(100deg, $btn_grad_left, $default_tint);
 	}
 }
 
@@ -400,7 +400,7 @@ iframe {
 }
 
 .gradient, .title .border, .service-2 .service-item i {
-  background-image: linear-gradient(100deg, $btn_grad_left, $site_orange);
+  background-image: linear-gradient(100deg, $btn_grad_left, $default_tint);
 }
 
 .header-bradcrumb {
@@ -410,7 +410,7 @@ iframe {
 		font-weight: 200;
 		font-family: $font_family_1;
 		&:hover {
-			color: $site_orange;
+			color: $default_tint;
 		}
 	}
 	.active {
@@ -436,15 +436,15 @@ iframe {
 				text-transform: capitalize;
 				border-radius: 0;
 				&:hover {
-					border: 1px solid $site_orange;
+					border: 1px solid $default_tint;
 					border-radius: 0;
-					background: $site_orange;
+					background: $default_tint;
 					color: white;
 				}
 			}
 			.nav-link.active {
-				border: 1px solid $site_orange;
-				background: $site_orange;
+				border: 1px solid $default_tint;
+				background: $default_tint;
 				color: white;
 			}
 		}
@@ -471,7 +471,7 @@ iframe {
 		li {
 			display: inline-block;
 			a {
-				color: $site_orange;
+				color: $default_tint;
 			}
 		}
 	}
@@ -496,15 +496,15 @@ iframe {
 				transition: .2s ease-in-out 0s;
 				&:hover {
 					background: none;
-					color: $site_orange;
+					color: $default_tint;
 				}
 				&:active {
 					background: none;
-					color: $site_orange;
+					color: $default_tint;
 				}
 				&:focus {
 					background: none;
-					color: $site_orange;
+					color: $default_tint;
 				}
 			}
 		}
@@ -533,7 +533,7 @@ iframe {
 			font-size: 13px;
 			&:hover {
 				background: transparent;
-				color: $site_orange;
+				color: $default_tint;
 			}
 		}
 		.dropdown-menu {
@@ -647,7 +647,7 @@ iframe {
 			transition: transform 300ms ease;
 			transition: transform 300ms ease, -webkit-transform 300ms ease;
 			background: #fff;
-			color: $site_orange;
+			color: $default_tint;
 			line-height: 80px;
 			font-size: 30px;
 			margin-left: 5px;
@@ -710,7 +710,7 @@ iframe {
 	}
 	h4 {
 		font-size: 14px;
-		color: $site_orange;
+		color: $default_tint;
 		letter-spacing: 1px;
 		text-transform: uppercase;
 	}
@@ -736,8 +736,8 @@ iframe {
 			width: 12%;
 			height: 3px;
 			background-color: $background_color_3;
-			background-image: linear-gradient(100deg, $btn_grad_left, $site_orange);
-			background-image: linear-gradient(100deg, $btn_grad_left, $site_orange);
+			background-image: linear-gradient(100deg, $btn_grad_left, $default_tint);
+			background-image: linear-gradient(100deg, $btn_grad_left, $default_tint);
 		}
 	}
 }
@@ -815,7 +815,7 @@ iframe {
 		padding: 15px 0;
 		width: 100%;
 		margin: 0;
-		background: $site_orange;
+		background: $default_tint;
 		color: white;
 		border-radius: 0;
 		cursor: pointer;
@@ -844,7 +844,7 @@ iframe {
 			height: 30px;
 			width: 30px;
 			text-align: center;
-			color: $site_orange;
+			color: $default_tint;
 			i {
 				display: inline-block;
 				font-size: 20px;
@@ -925,7 +925,7 @@ iframe {
 	i {
 		font-size: 40px;
 		display: inline-block;
-		color: $site_orange;
+		color: $default_tint;
 	}
 	h3 {
 		font-size: 18px;
@@ -950,7 +950,7 @@ iframe {
 	a {
 		color: $color_15;
 		&:hover {
-			color: $site_orange;
+			color: $default_tint;
 		}
 	}
 	.post-thumb {
@@ -1040,7 +1040,7 @@ iframe {
 	a {
 		color: $color_15;
 		&:hover {
-			color: $site_orange;
+			color: $default_tint;
 		}
 	}
 	.prev-post {
@@ -1065,7 +1065,7 @@ iframe {
 				font-size: 16px;
 				i {
 					&:hover {
-						color: $site_orange;
+						color: $default_tint;
 					}
 				}
 			}
@@ -1110,7 +1110,7 @@ iframe {
 			font-size: 14px;
 			margin-bottom: 8px;
 			a {
-				color: $site_orange;
+				color: $default_tint;
 				font-size: 13px;
 			}
 		}
@@ -1131,7 +1131,7 @@ iframe {
 		box-shadow: none;
 		&:focus {
 			box-shadow: none;
-			border: 1px solid $site_orange;
+			border: 1px solid $default_tint;
 		}
 	}
 	textarea {
@@ -1141,7 +1141,7 @@ iframe {
 		height: auto;
 		&:focus {
 			box-shadow: none;
-			border: 1px solid $site_orange;
+			border: 1px solid $default_tint;
 		}
 	}
 	.btn-main {
@@ -1168,7 +1168,7 @@ iframe {
 	}
 	li.active {
 		a {
-			color: $site_orange;
+			color: $default_tint;
 			font-weight: 600;
 		}
 	}
@@ -1208,7 +1208,7 @@ iframe {
 			font-family: $font_family_1;
 			display: block;
 			&:hover {
-				color: $site_orange;
+				color: $default_tint;
 			}
 		}
 	}
@@ -1241,7 +1241,7 @@ iframe {
 		color: white9;
 	}
 	a {
-		color: $site_orange;
+		color: $default_tint;
 	}
 }
 
