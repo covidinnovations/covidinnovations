@@ -36,7 +36,4 @@
     <link rel="stylesheet" href="{{ ($style | minify | fingerprint).RelPermalink }}">
 {{ end }}
 
-{{ $styles := resources.Get "css/preloader.css" | minify}}
-<link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
-
 </head>
