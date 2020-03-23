@@ -52,7 +52,9 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
   font-size: 30px;
   @media #{$media-size-phone} {
-	  img {
+	font-size: 20px;
+	font-weight: 400;
+	img {
 		max-height: 30px;
 	  }
   }
