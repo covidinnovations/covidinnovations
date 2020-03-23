@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:500");
 
 html {
   box-sizing: border-box;
@@ -1074,77 +1075,6 @@ iframe {
 			color: $default_tint;
 			font-weight: 600;
 		}
-	}
-}
-/*=================================================================
-  Footer section
-==================================================================*/
-.top-footer {
-	background-color: $top_footer_bg_color;
-	// border-top: 1px solid #404040;
-	padding: 20px 0 20px;
-	h3 {
-		font-size: 16px;
-		line-height: 1.5;
-		color: black;
-		font-weight: 400;
-		text-transform: uppercase;
-		letter-spacing: 1px;
-		margin-bottom: 10px;
-	}
-	p {
-		font-size: 13px;
-		line-height: 30px;
-		color: black;
-		font-weight: 300;
-		padding-right: 20px;
-	}
-	li {
-		a {
-			font-size: 13px;
-			line-height: 25px;
-			color: black;
-			font-weight: 300;
-			letter-spacing: 1px;
-			text-transform: capitalize;
-			transition: color .3s;
-			font-family: $font_family_1;
-			display: block;
-			&:hover {
-				color: $default_tint;
-			}
-		}
-	}
-}
-.footer-bottom {
-	text-align: center;
-	background-color: $bottom_footer_bg_color;
-	border-top: 1px solid #2c2c2c;
-	padding: 30px 0;
-	h5 {
-		font-size: 12px;
-		line-height: 1;
-		color: white;
-		font-weight: 400;
-		text-transform: uppercase;
-		letter-spacing: 2px;
-		margin-top: 7px;
-		margin-bottom: 3px;
-	}
-	h6 {
-		font-size: 11px;
-		line-height: 15px;
-		color: white8;
-		font-weight: 400;
-		text-transform: capitalize;
-		letter-spacing: 2px;
-		margin-bottom: 0;
-	}
-	p {
-		color: white9;
-	}
-	a {
-		color: $default_tint;
 	}
 }
 

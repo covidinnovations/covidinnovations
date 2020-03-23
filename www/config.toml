@@ -47,7 +47,7 @@ DefaultContentLanguage = "en"
 
     footerDescription = "TBD"
     footerTechnologyTitle = "Technology"
-    footerQuicklinkTitle = "Links"
+    footerQuicklinkTitle = "Quick Links"
     footerAboutTitle = "About"
     footerSubscribeTitle = "Subscribe"
 
@@ -84,7 +84,7 @@ DefaultContentLanguage = "en"
 
     # Footer Quick links Menu
     [[menu.quicklink]]
-        name    = "feedback"
+        name    = "Give Feedback"
         url     = "contact/feedback"
         weight  = 1
     [[menu.quicklink]]

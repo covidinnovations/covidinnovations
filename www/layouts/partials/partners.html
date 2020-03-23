@@ -1,9 +1,9 @@
-{{ $data := index .Site.Data .Site.Language.Lang }}
 {{ "<!-- Start -->" | safeHTML }}
 <div class="container">
     <div class="row">
-        <div class="col">
-
+        <div class="col partners">
+            {{ $image := "images/logos/la-french-tech-logo.png" }}
+            <a href="https://hk.lafrenchtech.com/"><img src="{{ $image | absURL }}" alt="partner logo" /></a>
         </div>
     </div>
 </div>
