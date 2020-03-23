@@ -1,0 +1,19 @@
+enable  : true
+item    :
+# Why
+  - positionRight : false
+    image : motifs/undraw_experience_design_eq3j.svg
+    title : Adlets 简介
+    description : >
+     Adlet 是一种新的数字广告格式，为广告客户和营销人员带来了新的机会。借助 Adlet，您可以创建丰富的动画和交互式体验。
+    link: blog
+    cta:  查阅更多
+# How
+  - positionRight : true
+    image : motifs/undraw_abstract_x68e.svg
+    title : 基于 WebAssembly
+    description : >
+      Adlets是使用称为WebAssembly的技术构建的，现在各种Web浏览器都支持该技术。WebAssembly提供了更高的性能和更好的用户体验，感觉就像是本机应用程序。
+    link: showcase
+    cta:  查看演示
+

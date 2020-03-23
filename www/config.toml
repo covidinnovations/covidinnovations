@@ -1,0 +1,105 @@
+baseURL = "/"
+publishDir = "../public"
+languageCode = "en-us"
+title = "Covid Innovations"
+theme = "navigator-hugo"
+disableKinds = ["taxonomy", "taxonomyTerm"]
+ignoreFiles = [ "\\.foo$", "\\.boo$" ]
+sectionPagesMenu = "main"
+
+# Build robots.txt file
+enableRobotsTXT = true
+# google analytics tracking id
+googleAnalytics = ""
+
+enableGitInfo = false
+pygmentsCodeFences = true
+
+# Multilangues setup
+# Renders the default content language in subdir, e.g. /en/. The root directory / will redirect to /en/
+defaultContentLanguageInSubdir = true
+DefaultContentLanguage = "en"
+
+[params]
+    author = "Covid Innovations"
+    description = "A marketplace for COVID solutions"
+
+    # [[Params.listeLangues]]
+    # code = "cn"
+    # [[Params.listeLangues]]
+    # code = "en"
+
+    # meta data
+
+[permalinks]
+  blog = "/:year/:month/:title/"
+
+[Languages]
+    ############# 1 - Site en ENGLISH
+    [Languages.en]
+    weight = 1
+    languageCode = "en-us"
+    dateFormat = "January 2, 2006"
+
+    home = "home"
+    logo = "images/logo.png"
+    menufixed = false
+
+    footerDescription = "TBD"
+    footerTechnologyTitle = "Technology"
+    footerQuicklinkTitle = "Quicklinks"
+    footerAboutTitle = "About"
+    footerSubscribeTitle = "Subscribe"
+
+    ############ 1 - Site in Chinese
+    [Languages.cn]
+    weight = 2
+    languageCode = "zh-cn"
+    dateFormat = "2 January 2006"
+
+    home = "CN Home"
+    logo = "images/logo.png"
+    menufixed = false
+
+    footerDescription = "TBD"
+    footerTechnologyTitle = "Technology"
+    footerQuicklinkTitle = "Quicklinks"
+    footerAboutTitle = "About"
+    footerSubscribeTitle = "Subscribe"
+
+
+# Site Menus
+[menu]
+    # Navbar Menus
+    [[menu.nav]]
+        name    = "solutions"
+        url     = "solutions"
+        weight  = 1
+
+    [[menu.nav]]
+        name    = "about"
+        url     = "about"
+        weight  = 2
+
+
+    # Footer Quick links Menu
+    [[menu.quicklink]]
+        name    = "contact"
+        url     = "contact"
+        weight  = 1
+    [[menu.quicklink]]
+        name    = "blog"
+        url     = "blog"
+        weight  = 2
+    [[menu.quicklink]]
+        name    = "github"
+        url     = "https://github.com/covidinnovations"
+        weight  = 3
+    [[menu.quicklink]]
+        name    = "twitter"
+        url     = ""
+        weight  = 4
+
+[mediaTypes]
+  [mediaTypes."application/wasm"]
+    suffixes = ["wasm"]

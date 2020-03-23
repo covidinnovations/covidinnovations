@@ -1,0 +1,59 @@
+{{ "<!-- Footer Start -->" | safeHTML }}
+<footer id="footer" class="bg-one">
+    <!-- <div class="top-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 col-md-3 col-lg-3">
+                    <h3>{{ .Site.Params.footerAboutTitle }}</h3>
+                    {{ with .Site.Params.footerDescription }}<p>{{ . }}</p>{{ end }}
+                </div>
+                <div class="col-sm-3 col-md-3 col-lg-3">
+                </div>
+                <div class="col-sm-3 col-md-3 col-lg-3">
+                </div>
+                <div class="col-sm-3 col-md-3 col-lg-3">
+                    <h3>{{ .Site.Params.footerQuicklinkTitle }}</h3>
+                    <ul>
+                        {{ range .Site.Menus.quicklink }}
+                        <li>
+                            <a href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+                        </li>
+                        {{ end }}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div class="footer-bottom">
+        <h5>© 2020 Covid Innovations. All rights reserved.</h5>
+    </div>
+</footer>
+{{ "<!-- end footer -->" | safeHTML }}
+
+
+{{ "<!-- Essential Scripts -->" | safeHTML }}
+
+{{ "<!-- jQuery -->" | safeHTML }}
+<script src="{{ "plugins/jquery/dist/jquery.min.js" | absURL }}"></script>
+{{ "<!-- Bootstrap -->" | safeHTML }}
+<script src="{{ "plugins/bootstrap/dist/js/popper.min.js" | absURL }}"></script>
+<script src="{{ "plugins/bootstrap/dist/js/bootstrap.min.js" | absURL }}"></script>
+{{ "<!-- Main Script -->" | safeHTML }}
+{{ $script := resources.Get "js/app.js" | minify}}
+<script src="{{ $script.Permalink }}"></script>
+
+<script>
+    RAYET.domLoaded(function() {
+        var date = new Date();
+        var dt = date.toDateString();
+        var time = date.toLocaleTimeString();
+        let page = RAYET.getLastPath();
+        RAYET.log("Loaded page [{0}] at {1} {2}".format(page, dt, time));
+
+        $('#preloader').fadeOut('slow', function () {
+            $(this).remove();
+        });
+    });
+</script>
+
+

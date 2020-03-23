@@ -1,0 +1,31 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+{{ with $data.demo }}
+    {{ if .enable }}
+    {{ "<!-- Start Contact Us -->" | safeHTML }}
+    <section class="section-sm bg-gray" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="title text-center">
+                        <h2>{{ .heading1 }}</h2>
+                        <span class="border"></span>
+                        <p>{{ .subtitle }}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4">
+                </div>
+                <div class="col-md-4 shadow" style="background-color: white;">
+                    <div id="adlet">
+                        <iframe id="ad_frame" width="300" height="300" src="/showcase/ad.htm?id=rayet" scrolling="no" align="center">
+                        </iframe>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                </div>
+            </div>
+        </div>
+    </section>
+    {{ end }}
+{{ end }}

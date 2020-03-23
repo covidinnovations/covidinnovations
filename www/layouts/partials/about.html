@@ -1,0 +1,12 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+{{ with $data.about }}
+    {{ if .enable }}
+    {{ "<!-- About Section Start -->" | safeHTML }}
+    <section class="about section-sm" id="about">
+        <div class="container">
+
+        </div>
+    </section>
+    {{"<!-- About section End -->" | safeHTML}}
+    {{ end }}
+{{ end }}

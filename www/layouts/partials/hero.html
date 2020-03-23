@@ -1,0 +1,26 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+{{ with $data.hero }}
+    {{ if .enable }}
+    {{ "<!-- Hero Area -->" | safeHTML }}
+    <section class="hero-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="{{ .image | absURL }}" class="img-fluid" alt="about-image">
+                </div>
+                <div class="col-md-6">
+                    <div class="block mt-75">
+                        <h2>{{ .title1 }}<br>{{ .title2 }}</h2>
+                        {{ with .description }}
+                            <h4>{{ . }}</h4>
+                        {{ end }}
+                        <div class="mt-25">
+                            <a class="btn btn-main" href="{{ .Permalink }}">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{ end }}
+{{ end }}

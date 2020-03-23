@@ -1,0 +1,22 @@
+enable  : true
+item    :
+# Why
+  - positionRight : false
+    image : motifs/undraw_experience_design_eq3j.svg
+    title : Introducing Adlets
+    description : >
+      Adlets are a new digital ad format that opens up new opportunities for advertisers and marketers.
+      With Adlets, you can create rich animations and interactive experiences.
+    link: blog
+    cta:  Learn More
+# How
+  - positionRight : true
+    image : motifs/undraw_abstract_x68e.svg
+    title : Runs on WebAssembly
+    description : >
+      Adlets are built with a technology called WebAssembly that is supported in every modern web browser.
+      WebAssembly offers greater performance and a better user experience that feels more like a
+      native app.
+    link: showcase
+    cta:  See Demos
+
