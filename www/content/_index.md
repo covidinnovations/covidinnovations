@@ -1,10 +1,8 @@
 ---
-title: 'Home'
+title: 'COVID Innovations'
 date: 2019-12-22
 draft: false
 ---
-
-## COVID Innovations
 
 The Coronavirus creates urgent demand for specialized technologies in airports, quarantine zones,
 hospitals, logistic supply, prisons,... Companies have been coming up with solutions that can be
