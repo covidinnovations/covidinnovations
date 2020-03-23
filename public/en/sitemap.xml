@@ -18,6 +18,11 @@
   </url>
   
   <url>
+    <loc>/en/solutions/</loc>
+    <lastmod>2019-12-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/en/contact/</loc>
     <lastmod>2019-12-22T00:00:00+00:00</lastmod>
   </url>
@@ -35,11 +40,6 @@
                 hreflang="en"
                 href="/en/"
                 />
-  </url>
-  
-  <url>
-    <loc>/en/solutions/</loc>
-    <lastmod>2019-12-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
