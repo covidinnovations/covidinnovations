@@ -47,7 +47,7 @@ DefaultContentLanguage = "en"
 
     footerDescription = "TBD"
     footerTechnologyTitle = "Technology"
-    footerQuicklinkTitle = "Quicklinks"
+    footerQuicklinkTitle = "Links"
     footerAboutTitle = "About"
     footerSubscribeTitle = "Subscribe"
 
@@ -63,7 +63,7 @@ DefaultContentLanguage = "en"
 
     footerDescription = "TBD"
     footerTechnologyTitle = "Technology"
-    footerQuicklinkTitle = "Quicklinks"
+    footerQuicklinkTitle = "Links"
     footerAboutTitle = "About"
     footerSubscribeTitle = "Subscribe"
 
@@ -84,21 +84,13 @@ DefaultContentLanguage = "en"
 
     # Footer Quick links Menu
     [[menu.quicklink]]
-        name    = "contact"
-        url     = "contact"
+        name    = "feedback"
+        url     = "contact/feedback"
         weight  = 1
-    [[menu.quicklink]]
-        name    = "blog"
-        url     = "blog"
-        weight  = 2
     [[menu.quicklink]]
         name    = "github"
         url     = "https://github.com/covidinnovations"
         weight  = 3
-    [[menu.quicklink]]
-        name    = "twitter"
-        url     = ""
-        weight  = 4
 
 [mediaTypes]
   [mediaTypes."application/wasm"]
