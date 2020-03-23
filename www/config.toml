@@ -10,7 +10,7 @@ sectionPagesMenu = "main"
 # Build robots.txt file
 enableRobotsTXT = true
 # google analytics tracking id
-googleAnalytics = ""
+googleAnalytics = "UA-101788190-2"
 
 enableGitInfo = false
 pygmentsCodeFences = true
