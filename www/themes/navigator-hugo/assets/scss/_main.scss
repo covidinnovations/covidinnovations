@@ -14,7 +14,7 @@ html {
 
 body {
   line-height: 1.4;
-  font-family: "Titillium Web", sans-serif;
+  font-family: $font_family_1, sans-serif;
   -webkit-font-smoothing: antialiased;
   margin: 0;
   padding: 0;
@@ -35,18 +35,18 @@ body {
 }
 
 p {
-  font-family: "Titillium Web", sans-serif;
-  color: #9a9a9a;
-  font-size: 15px;
+  font-family: $font_family_1, sans-serif;
+  color: black;
+  font-size: 18px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Titillium Web", sans-serif;
+  font-family: $font_family_1, sans-serif;
   font-weight: 600;
 }
 
 #logo_text {
-  font-family: Futura,Trebuchet MS,Arial,sans-serif;
+  font-family: $font_family_2, sans-serif;
   font-weight: 600;
   color: #fff;
   display: inline-block;

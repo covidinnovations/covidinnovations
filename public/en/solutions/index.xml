@@ -11,5 +11,14 @@
 	<atom:link href="/en/solutions/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Browse Solutions</title>
+      <link>/en/solutions/browse/</link>
+      <pubDate>Sun, 22 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/en/solutions/browse/</guid>
+      <description>Solutions that have been submitted will soon be available here.</description>
+    </item>
+    
   </channel>
 </rss>

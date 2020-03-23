@@ -18,15 +18,15 @@
 				transition: .2s ease-in-out 0s;
 				&:hover {
 					background: none;
-					color: $default_tint;
+					color: $nav_tint;
 				}
 				&:active {
 					background: none;
-					color: $default_tint;
+					color: $nav_tint;
 				}
 				&:focus {
 					background: none;
-					color: $default_tint;
+					color: $nav_tint;
 				}
 			}
 		}

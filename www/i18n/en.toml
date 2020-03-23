@@ -1,9 +1,13 @@
 [home]
-other = "home"
+other = "Home"
 [about]
 other = "about"
 [solutions]
-other = "solutions"
+other = "Submit As Company"
+[browse]
+other = "Browse Solutions"
+[feedback]
+other = "Feedback"
 [contact]
 other = "contact"
 

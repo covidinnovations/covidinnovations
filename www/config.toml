@@ -41,7 +41,7 @@ DefaultContentLanguage = "en"
     languageCode = "en-us"
     dateFormat = "January 2, 2006"
 
-    home = "home"
+    home = "Home"
     logo = "images/logo.png"
     menufixed = false
 
@@ -71,16 +71,21 @@ DefaultContentLanguage = "en"
 # Site Menus
 [menu]
     # Navbar Menus
+    # The name is used as a key to get the localized name in /i18n/en.toml (or other language)
     [[menu.nav]]
         name    = "solutions"
         url     = "solutions"
         weight  = 1
 
     [[menu.nav]]
-        name    = "about"
-        url     = "about"
+        name    = "browse"
+        url     = "solutions/browse"
         weight  = 2
 
+    [[menu.nav]]
+        name    = "feedback"
+        url     = "contact/feedback"
+        weight  = 3
 
     # Footer Quick links Menu
     [[menu.quicklink]]
