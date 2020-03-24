@@ -78,14 +78,19 @@ DefaultContentLanguage = "en"
         weight  = 1
 
     [[menu.nav]]
+        name    = "tenders"
+        url     = "tenders"
+        weight  = 2
+
+    [[menu.nav]]
         name    = "browse"
         url     = "solutions/browse"
-        weight  = 2
+        weight  = 3
 
     [[menu.nav]]
         name    = "feedback"
         url     = "contact/feedback"
-        weight  = 3
+        weight  = 4
 
     # Footer Quick links Menu
     [[menu.quicklink]]

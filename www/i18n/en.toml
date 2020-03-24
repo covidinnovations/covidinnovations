@@ -6,6 +6,8 @@ other = "about"
 other = "Submit As Company"
 [browse]
 other = "Browse Solutions"
+[tenders]
+other = "Tender List"
 [feedback]
 other = "Feedback"
 [contact]
