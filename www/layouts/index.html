@@ -8,15 +8,31 @@
           <h2>{{ .Title }}</h2>
           <span class="border"></span>
         </div>
-        <div class="col-md-8 mx-auto">
+        <div class="col-md-9 mx-auto">
           {{ .Content }}
         </div>
         <div class="mt-25 text-center">
-          <a class="btn btn-main" href="{{ "solutions" | absLangURL }}">Click Here to Add a Solution</a>
         </div>
 
       </div>
+
     </div>
+    <div class="row mt-30 buttons_row">
+      <div class="col-md-10 mx-auto">
+        <div class="row">
+          <div class="col">
+            <a class="btn btn-main" href="{{ "solutions" | absLangURL }}">Add a Solution</a>
+          </div>
+          <div class="col">
+            <a class="btn btn-main" href="{{ "tenders" | absLangURL }}">See Government Tenders</a>
+          </div>
+          <div class="col">
+            <a class="btn btn-main" href="{{ "solutions/browse" | absLangURL }}">Browse Solutions Database</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
   {{ partial "embed-gallery.html" . }}
 
