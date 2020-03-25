@@ -4,6 +4,8 @@
         content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
     {{ with .Site.Params.author }}
     <meta name="author" content="{{ . }}">{{ end }}
+    {{ template "_internal/opengraph.html" . }}
+
     {{ hugo.Generator }}
     {{ partial "analytics.html" . }}
 
@@ -16,7 +18,7 @@
     {{ "<!-- Mobile Specific Meta -->" | safeHTML }}
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- <link rel="shortcut icon" type="image/x-icon" href="{{ "app_icon/favicon.ico" | absURL }}" /> -->
+    <link rel="shortcut icon" type="image/x-icon" href="{{ "app_icon/favicon.ico" | absURL }}" />
 
     <!-- CSS -->
     <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet" type="text/css"> -->
