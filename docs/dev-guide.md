@@ -5,7 +5,7 @@
 
 ## Getting Started
 
-* Install Go
+* Install Go:
 * Install Hugo: https://gohugo.io/getting-started/installing
 
 

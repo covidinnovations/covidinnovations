@@ -1,7 +1,7 @@
 baseURL = "/"
 publishDir = "../public"
 languageCode = "en-us"
-title = "Covid Innovations"
+title = "Covid Tenders"
 theme = "navigator-hugo"
 disableKinds = ["taxonomy", "taxonomyTerm"]
 ignoreFiles = [ "\\.foo$", "\\.boo$" ]
