@@ -46,3 +46,25 @@
 		margin: 15px 0;
 	}
 }
+.about {
+	h2 {
+		padding: 30px 0 0 0;
+		font-size: 30px;
+		@media #{$media-size-phone} {
+			font-size: 24px;
+		}
+	}
+	p {
+		font-size: 20px;
+	}
+	ol, ul {
+		margin: 5px 20px;
+		font-size: 20px;
+		line-height: 40px;
+		color: black;
+		@media #{$media-size-phone} {
+			line-height: 30px;
+		}
+	}
+
+}

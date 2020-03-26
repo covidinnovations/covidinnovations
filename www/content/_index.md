@@ -3,7 +3,7 @@ title: 'Home'
 section1: 'Share your solution with governments/procurers worldwide'
 section2: 'One submission, global reach'
 section3: 'Here is how it works'
-section4: 'List of existing tenders'
+section4: 'Currently active tenders'
 date: 2019-12-22
 draft: false
 ---

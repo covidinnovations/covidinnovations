@@ -13,11 +13,7 @@
           <div class="col-md-9 mx-auto">
             {{ .Content }}
           </div>
-          <div class="mt-25 text-center">
-          </div>
-
         </div>
-
       </div>
       <div class="row mt-30">
         <div class="col-md-10 mx-auto">
@@ -40,43 +36,43 @@
   <!-- Section 2 -->
   <section class="section-sm mt-20" id="home_map">
     <div class="container">
-        <div class="title text-center">
-            <h2>{{ .Params.Section2 }}</h2>
-            <span class="border"></span>
+      <div class="title text-center">
+        <h2>{{ .Params.Section2 }}</h2>
+        <span class="border"></span>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          {{ $image := "images/covid_map.png" }}
+          <img src="{{ $image | absURL }}" alt="covid map" class="map img-fluid" />
         </div>
-        <div class="row justify-content-center">
-          <div class="col-md-10">
-            {{ $image := "images/covid_map.png" }}
-            <img src="{{ $image | absURL }}" alt="covid map" class="map img-fluid" />
-          </div>
-        </div>
+      </div>
     </div>
   </section>
 
   <!-- Section 3 -->
   <section class="section-sm mt-20" id="how">
     <div class="container">
-        <div class="title text-center">
-            <h2>{{ .Params.Section3 }}</h2>
-            <span class="border"></span>
-        </div>
-        {{ partial "how-it-works.html" . }}
+      <div class="title text-center">
+        <h2>{{ .Params.Section3 }}</h2>
+        <span class="border"></span>
       </div>
+      {{ partial "how-it-works.html" . }}
+    </div>
   </section>
 
   <!-- Section 4 -->
   <section class="section-sm mt-20" id="gallery">
     <div class="container">
-        <div class="title text-center">
-            <h2>{{ .Params.Section4 }}</h2>
-            <span class="border"></span>
-        </div>
-        <div class="row justify-content-center">
-            <iframe class="airtable-embed"
-            src="https://airtable.com/embed/shrHIQyMK7hUlovKs?backgroundColor=blue&viewControls=on"
-            frameborder="0" onmousewheel="" width="100%" height="800" style="background:
-            transparent; border: 1px solid #ccc;"></iframe>
-        </div>
+      <div class="title text-center">
+        <h2>{{ .Params.Section4 }}</h2>
+        <span class="border"></span>
+      </div>
+      <div class="row justify-content-center">
+        <iframe class="airtable-embed"
+        src="https://airtable.com/embed/shrz7gs2AUsBxqoG4?backgroundColor=blue&viewControls=on"
+        frameborder="0" onmousewheel="" width="100%" height="800" style="background: transparent;
+        border: 1px solid #ccc;"></iframe>
+      </div>
     </div>
   </section>
 </div>

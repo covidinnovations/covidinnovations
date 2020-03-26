@@ -237,11 +237,6 @@ hr {
   display: inline-block;
 }
 
-ol, ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
 
 figure {
   margin: 0;
@@ -331,7 +326,7 @@ iframe {
 }
 
 .title {
-	padding-bottom: 30px;
+	padding-bottom: 10px;
 	text-align: center;
 	h2 {
 		font-size: 35px;
@@ -369,7 +364,7 @@ iframe {
 }
 
 .section {
-  padding: 100px 0;
+  padding: 60px 0;
 
   @media #{$media-size-phone} {
     padding: 40px 0;

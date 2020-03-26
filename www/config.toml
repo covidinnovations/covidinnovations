@@ -88,9 +88,14 @@ DefaultContentLanguage = "en"
         weight  = 3
 
     [[menu.nav]]
+        name    = "about"
+        url     = "about"
+        weight  = 4
+
+    [[menu.nav]]
         name    = "feedback"
         url     = "contact/feedback"
-        weight  = 4
+        weight  = 5
 
     # Footer Quick links Menu
     [[menu.quicklink]]
@@ -102,6 +107,3 @@ DefaultContentLanguage = "en"
         url     = "https://github.com/covidinnovations"
         weight  = 3
 
-[mediaTypes]
-  [mediaTypes."application/wasm"]
-    suffixes = ["wasm"]
