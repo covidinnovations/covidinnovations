@@ -1,4 +1,10 @@
 .home {
+	section {
+		padding: 40px 0;
+		@media #{$media-size-phone} {
+			padding: 20px;
+		}
+	}
 	.title {
 		padding-bottom: 10px;
 	}
@@ -6,6 +12,9 @@
 		font-size: 40px;
 		font-weight: bold;
 		margin-top: 0;
+		@media #{$media-size-phone} {
+			font-size: 30px;
+		}
 	}
 	p {
 		line-height: 1.6;
@@ -18,9 +27,22 @@
 	}
 	.btn-main {
 		padding: 10px 20px;
+		margin: 10px 0 0 0;
 		width: 260px;
 	}
-	// .buttons_row {
-	// 	max-width: 800px;
-	// }
+	ol, ul {
+		margin: 5px 20px;
+		font-size: 24px;
+		list-style: inside;
+		list-style-type: decimal;
+		line-height: 40px;
+		color: black;
+		@media #{$media-size-phone} {
+			font-size: 20px;
+			line-height: 30px;
+		}
+	}
+	li {
+		margin: 15px 0;
+	}
 }

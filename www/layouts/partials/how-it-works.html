@@ -1,0 +1,18 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+{{ with $data.how }}
+    {{ "<!-- About Section Start -->" | safeHTML }}
+    <div class="row justify-content-center">
+        <div class="row">
+            <div class="col">
+                <ol>
+                    {{ range .item }}
+                    <li>
+                        {{ .text }}
+                    </li>
+                    {{ end }}
+                </ol>
+            </div>
+        </div>
+    </div>
+    {{"<!-- About section End -->" | safeHTML}}
+{{ end }}
