@@ -26,14 +26,14 @@ technological innovation against the Coronavirus.
 
 ## FAQ
 
-Q: My solution has confidential data. Will this be shared in public?
+**Q: My solution has confidential data. Will this be shared in public?**
 
 A: When you submit your solution, you can chose if you would like it to be publicly available or
 not. If you chose "No", the data will only be sent in private channels to institutional buyers.
 
 ---
 
-Q: How does Covidtenders.org get access to institutional buyers?
+**Q: How does Covidtenders.org get access to institutional buyers?**
 
 A: We count on our personal networks and the effort of the community to reach out to as many
 institutional buyers as possible. Often, the tender details have contact information which allows us
@@ -41,21 +41,21 @@ to reach out directly to them and share the list of relevant solutions.
 
 ---
 
-Q: Who has access to the database?
+**Q: Who has access to the database?**
 
 A: The database is being managed by volunteers whom you can contact on the slack channel (see link
 above).
 
 ---
 
-Q: Can I edit my data after I have submitted it?
+**Q: Can I edit my data after I have submitted it?**
 
 A: Currently, we do not have a form for editing previous entires. However, you can request to edit
 your submitted data through our Contact form. We will respond within 24 hours.
 
 ---
 
-Q: Is this GDPR Compliant? Can i remove the data if i wish so?
+**Q: Is this GDPR Compliant? Can i remove the data if i wish so?**
 
 A: The data is being shared only with your own consent. It will be removed from our servers upon
 requet or 6 months after entry. You can contact us through the contact form or at

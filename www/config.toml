@@ -73,13 +73,13 @@ DefaultContentLanguage = "en"
     # Navbar Menus
     # The name is used as a key to get the localized name in /i18n/en.toml (or other language)
     [[menu.nav]]
-        name    = "solutions"
-        url     = "solutions"
+        name    = "tenders"
+        url     = "tenders"
         weight  = 1
 
     [[menu.nav]]
-        name    = "tenders"
-        url     = "tenders"
+        name    = "solutions"
+        url     = "solutions"
         weight  = 2
 
     [[menu.nav]]
