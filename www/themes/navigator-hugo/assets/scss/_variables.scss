@@ -4,7 +4,8 @@ $font_family_1: "Titillium Web", sans-serif;
 $font_family_2: "Playfair Display",sans-serif;
 $font_family_3: 'Open Sans', sans-serif;
 
-$default_tint: #2d7ff9;
+$nav_bg_color: #008dc9;
+$default_tint: #008dc9;
 $nav_tint: #ff5600;
 // $nav_tint: #FFFB00;
 
@@ -47,7 +48,7 @@ $background_color_6: #6cb670;
 $background_color_7: #f2f6f8;
 $background_color_8: #ff5600;
 $background_color_9: #fff;
-$top_footer_bg_color: #0080FF;
+$top_footer_bg_color: $nav_bg_color;
 $bottom_footer_bg_color: #333333;
 $border_color_1: #ff5600;
 
