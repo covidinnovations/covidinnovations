@@ -1,7 +1,7 @@
 
 .navigation {
 	transition: .3s all;
-	background: #0080FF;
+	background: $nav_bg_color;
 	.navbar-nav {
 		>li.active {
 			a {
