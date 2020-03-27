@@ -18,10 +18,10 @@ technological innovation against the Coronavirus.
 
 ## HOW YOU CAN HELP
 
-* Spread the word to companies that create solutions for COVID-19
-* Help us submit new tenders and connect to institutional buyers
-* Support our non-profit initative by becoming a partner and share the website link in your community
-* [Join our Slack Community](https://join.slack.com/t/covidinnovations/shared_invite/zt-ct5vul0z-sLapNdP03~~AIp~WSBBsvg) to
+* **Spread the word** to companies that create solutions for COVID-19
+* **Help us submit new tenders** and connect to institutional buyers
+* Support our non-profit initative by becoming a partner and **share the website** link in your community
+* **[Join our Slack Community](https://join.slack.com/t/covidinnovations/shared_invite/zt-ct5vul0z-sLapNdP03~~AIp~WSBBsvg)** to
   help us improve this site or review solutions
 
 ## FAQ
@@ -55,8 +55,8 @@ your submitted data through our Contact form. We will respond within 24 hours.
 
 ---
 
-**Q: Is this GDPR Compliant? Can i remove the data if i wish so?**
+**Q: Is this GDPR Compliant? Can I remove the data if i wish so?**
 
 A: The data is being shared only with your own consent. It will be removed from our servers upon
-requet or 6 months after entry. You can contact us through the contact form or at
-contact@covidinnovations.org. (edited)
+request or 6 months after entry. You can contact us through the contact form or at
+contact@covidinnovations.org.
