@@ -14,7 +14,7 @@ investors, policymakers and community builders to foster the growth of the start
 France and across the world.
 
 We are committed to slow down the spread of the virus and save lives by accelerating the
-technological innovation against the Coronavirus.
+technological innovation for our healthcare system.
 
 ## HOW YOU CAN HELP
 
