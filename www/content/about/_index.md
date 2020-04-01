@@ -5,7 +5,7 @@ draft: false
 ---
 
 Covid Tenders is a non-profit initiative launched by a group of volunteers. It was started by [Basile
-Verhulst](https://www.linkedin.com/in/basile-verhulst-a258a46b/) who has founded several high-tech
+Verhulst](https://www.linkedin.com/in/basile-verhulst-a258a46b/) [(contact)](mailto:basile@blockdynamics.io) who has founded several high-tech
 startups in Asia and Paris in the past.
 
 It is an initiative launched and supported by the [French Tech Community in Asia](
