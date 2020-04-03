@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on Covid Tenders</title>
+    <title>Covid Tenders</title>
     <link>/cn/</link>
-    <description>Recent content in Home on Covid Tenders</description>
+    <description>Recent content on Covid Tenders</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 22 Dec 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/cn/index.xml" rel="self" type="application/rss+xml" />
     
