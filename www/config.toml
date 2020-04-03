@@ -88,6 +88,11 @@ DefaultContentLanguage = "en"
         weight  = 3
 
     [[menu.nav]]
+        name    = "news"
+        url     = "news"
+        weight  = 4
+
+    [[menu.nav]]
         name    = "about"
         url     = "about"
         weight  = 4

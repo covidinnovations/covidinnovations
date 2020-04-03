@@ -2,16 +2,31 @@
 {{ with $data.how }}
     {{ "<!-- About Section Start -->" | safeHTML }}
     <div class="row justify-content-center">
-        <div class="row">
-            <div class="col">
-                <ol>
-                    {{ range .item }}
-                    <li>
-                        {{ .text }}
-                    </li>
-                    {{ end }}
-                </ol>
-            </div>
+        <div class="col-md-12">
+            <h4 style="color: red;">
+                This platform is will only succeed if word reaches enough technology companies. We need
+                your help to spread the message to online communities! This is a non-profit project.
+                Let's fight this crisis together.
+            </h4>
+
+        </div>
+
+    </div>
+    <div class="row justify-content-center">
+        <div class="col">
+            <ol>
+                {{ range .item }}
+                <li>
+                    {{ .text }}
+                </li>
+                {{ end }}
+            </ol>
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col text-center">
+            <a class="btn btn-main" style="width:300px" href="{{ "about" | absLangURL }}">Learn more in the "About" page.</a>
         </div>
     </div>
     {{"<!-- About section End -->" | safeHTML}}

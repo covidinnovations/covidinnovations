@@ -8,6 +8,8 @@ other = "Submit a Solution"
 other = "Browse Solutions"
 [tenders]
 other = "Tender List"
+[news]
+other = "News"
 [feedback]
 other = "Contact"
 [contact]
