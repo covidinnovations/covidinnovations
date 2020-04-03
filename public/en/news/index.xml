@@ -11,5 +11,14 @@
 	<atom:link href="/en/news/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>First Post</title>
+      <link>/en/news/first-post/</link>
+      <pubDate>Sat, 07 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/en/news/first-post/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
