@@ -84,21 +84,26 @@
         <h2>{{ .Params.Section4 }}</h2>
         <span class="border"></span>
       </div>
+      {{ $data := index .Site.Data .Site.Language.Lang }}
+      {{ with $data.home }}
+          {{ "<!-- About Section Start -->" | safeHTML }}
+
       <div class="row justify-content-center">
         <div class="col-md-12">
           <h4 style="color: red;">
-            This platform is will only succeed if word reaches enough technology companies. We need
-            your help to spread the message to online communities! This is a non-profit project.
-            Let's fight this crisis together.
+            {{ .help_message }}
           </h4>
         </div>
       </div>
       <div class="row justify-content-center mt-20">
         <div class="col text-center">
-          <a class="btn btn-main" style="width:300px" href="{{ "about" | absLangURL }}">Learn more in the "About"
-            page.</a>
+          <a class="btn btn-main" style="width:300px" href="{{ "about" | absLangURL }}">
+          {{ .help_cta }}
+          </a>
         </div>
       </div>
+      {{"<!-- About section End -->" | safeHTML}}
+      {{ end }}
 
     </div>
   </section>

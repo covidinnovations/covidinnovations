@@ -18,7 +18,7 @@
                 <div class="col-sm-3 col-md-3 col-lg-3">
                     <h3>{{ .footerQuickLink }}</h3>
                     <ul>
-                        {{ range .item }}
+                        {{ range .quicklink }}
                         <li>
                             <a href="{{ .url | absLangURL }}">{{ .name }}</a>
                         </li>

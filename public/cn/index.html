@@ -169,6 +169,33 @@
       </div>
       
       
+          <!-- About Section Start -->
+          <div class="row justify-content-center">
+              <div class="col">
+                  <ol>
+                      
+                      <li>
+                          Browse the list of government tenders that call for solutions to the Coronavirus.
+                      </li>
+                      
+                      <li>
+                          Companies can submit details of their innovation to the Solutions Database.
+                      </li>
+                      
+                      <li>
+                          Covidtenders.org will share the Solutions List directly to all Institutions in the database.
+                      </li>
+                      
+                      <li>
+                          If you agree, your Solution will also be made public to facilitate peer to peer matching.
+                      </li>
+                      
+                  </ol>
+              </div>
+          </div>
+
+          <!-- About section End -->
+      
 
     </div>
   </section>
@@ -180,21 +207,27 @@
         <h2></h2>
         <span class="border"></span>
       </div>
+      
+      
+          <!-- About Section Start -->
+
       <div class="row justify-content-center">
         <div class="col-md-12">
           <h4 style="color: red;">
-            This platform is will only succeed if word reaches enough technology companies. We need
-            your help to spread the message to online communities! This is a non-profit project.
-            Let's fight this crisis together.
+            This platform is will only succeed if word reaches enough technology companies. We need your help to spread the message to online communities! This is a non-profit project. Let&#39;s fight this crisis together.
+
           </h4>
         </div>
       </div>
       <div class="row justify-content-center mt-20">
         <div class="col text-center">
-          <a class="btn btn-main" style="width:300px" href="/cn/about">Learn more in the "About"
-            page.</a>
+          <a class="btn btn-main" style="width:300px" href="/cn/about">
+          
+          </a>
         </div>
       </div>
+      <!-- About section End -->
+      
 
     </div>
   </section>
@@ -217,6 +250,82 @@
 </div>
 
         </div>
+
+<!-- Footer Start -->
+<footer id="footer" class="bg-one">
+    <div class="top-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 col-md-3 col-lg-3">
+                    <h3>Partners</h3>
+                    <!-- Start -->
+<div class="container">
+    <div class="row">
+        <div class="col partners">
+            
+            <a href="https://hk.lafrenchtech.com/"><img src="/images/logos/LFT_HONG-KONG-SHENZHEN.png" alt="partner logo" /></a>
+        </div>
+    </div>
+</div>
+
+                </div>
+                <div class="col-sm-3 col-md-3 col-lg-3">
+                    
+                </div>
+                <div class="col-sm-3 col-md-3 col-lg-3">
+                </div>
+                <div class="col-sm-3 col-md-3 col-lg-3">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        
+                        <li>
+                            <a href="/cn/contact/feedback">Give Feedback</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://github.com/covidinnovations">Github</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <h5>Covid Innovations is a non-profit initiative.</h5>
+        <h5>We are looking for people who can help
+            spread the word! Join the project <a href="https://helpwithcovid.com/projects/190" target="_blank">here</a></h5>
+    </div>
+</footer>
+<!-- end footer -->
+
+<!-- Essential Scripts -->
+
+<!-- jQuery -->
+<script src="/plugins/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="/plugins/bootstrap/dist/js/popper.min.js"></script>
+<script src="/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script>
+
+<!-- Main Script -->
+
+<script src="/js/app.min.js"></script>
+
+<script>
+    RAYET.domLoaded(function() {
+        var date = new Date();
+        var dt = date.toDateString();
+        var time = date.toLocaleTimeString();
+        let page = RAYET.getLastPath();
+        RAYET.log("Loaded page [{0}] at {1} {2}".format(page, dt, time));
+
+        $('#preloader').fadeOut('slow', function () {
+            $(this).remove();
+        });
+    });
+</script>
+
 
 </body>
 </html>

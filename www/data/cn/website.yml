@@ -1,6 +1,6 @@
 footerQuickLink : Quick Links
 
-quicklink      :
+quicklink :
   - name  : Give Feedback
     url   : contact/feedback
     weight: 1
