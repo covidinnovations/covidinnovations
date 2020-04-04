@@ -1,3 +1,5 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+{{ with $data.website }}
 {{ "<!-- Footer Start -->" | safeHTML }}
 <footer id="footer" class="bg-one">
     <div class="top-footer">
@@ -14,11 +16,11 @@
                 <div class="col-sm-3 col-md-3 col-lg-3">
                 </div>
                 <div class="col-sm-3 col-md-3 col-lg-3">
-                    <h3>{{ .Site.Params.footerQuicklinkTitle }}</h3>
+                    <h3>{{ .footerQuickLink }}</h3>
                     <ul>
-                        {{ range .Site.Menus.quicklink }}
+                        {{ range .item }}
                         <li>
-                            <a href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+                            <a href="{{ .url | absLangURL }}">{{ .name }}</a>
                         </li>
                         {{ end }}
                     </ul>
@@ -33,7 +35,6 @@
     </div>
 </footer>
 {{ "<!-- end footer -->" | safeHTML }}
-
 
 {{ "<!-- Essential Scripts -->" | safeHTML }}
 
@@ -62,4 +63,4 @@
     });
 </script>
 
-
+{{ end }}

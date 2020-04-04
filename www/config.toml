@@ -24,15 +24,8 @@ DefaultContentLanguage = "en"
     author = "Covid Innovations"
     description = "A marketplace for COVID solutions"
 
-    # [[Params.listeLangues]]
-    # code = "cn"
-    # [[Params.listeLangues]]
-    # code = "en"
-
-    # meta data
-
 [permalinks]
-  blog = "/:year/:month/:title/"
+  news = "/:year/:month/:title/"
 
 [Languages]
     ############# 1 - Site en ENGLISH
@@ -40,38 +33,20 @@ DefaultContentLanguage = "en"
     weight = 1
     languageCode = "en-us"
     dateFormat = "January 2, 2006"
-
     home = "Home"
-    logo = "images/logo.png"
-    menufixed = false
-
-    footerDescription = "TBD"
-    footerTechnologyTitle = "Technology"
-    footerQuicklinkTitle = "Quick Links"
-    footerAboutTitle = "About"
-    footerSubscribeTitle = "Subscribe"
 
     ############ 1 - Site in Chinese
     [Languages.cn]
     weight = 2
     languageCode = "zh-cn"
     dateFormat = "2 January 2006"
-
     home = "CN Home"
-    logo = "images/logo.png"
-    menufixed = false
-
-    footerDescription = "TBD"
-    footerTechnologyTitle = "Technology"
-    footerQuicklinkTitle = "Links"
-    footerAboutTitle = "About"
-    footerSubscribeTitle = "Subscribe"
-
 
 # Site Menus
 [menu]
     # Navbar Menus
     # The name is used as a key to get the localized name in /i18n/en.toml (or other language)
+
     [[menu.nav]]
         name    = "tenders"
         url     = "tenders"
@@ -101,14 +76,4 @@ DefaultContentLanguage = "en"
         name    = "feedback"
         url     = "contact/feedback"
         weight  = 5
-
-    # Footer Quick links Menu
-    [[menu.quicklink]]
-        name    = "Give Feedback"
-        url     = "contact/feedback"
-        weight  = 1
-    [[menu.quicklink]]
-        name    = "github"
-        url     = "https://github.com/covidinnovations"
-        weight  = 3
 

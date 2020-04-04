@@ -1,0 +1,10 @@
+footerQuickLink : Quick Links
+
+item      :
+  - name  : Give Feedback
+    url   : contact/feedback
+    weight: 1
+
+  - name  : Github
+    url   : https://github.com/covidinnovations
+    weight: 2
