@@ -93,6 +93,7 @@ var COVID = {
 /// Javascript for Browse Solutions page
 COVID.Solutions = {
     solution_order: [
+        "all",
         "diagnosis",
         "algorithms",
         "commodity",
@@ -156,6 +157,10 @@ COVID.Solutions = {
 };
 
 COVID.SolutionCategories = {
+	"all": {
+        "title":"All Solutions",
+		"key":"shr2yOp34dqwVoYbu"
+    },
 	"diagnosis": {
         "title":"Diagnosis & Screening",
 		"key":"shrtGQcUPXluvcBpX"
