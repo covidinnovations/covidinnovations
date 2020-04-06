@@ -90,6 +90,119 @@ var RAYET = {
     // },
 };
 
+/// Javascript for login page
+RAYET.Solutions = {
+    status: "",
+    // The currently selected category index in the Browse Solutions page
+    current_index: 0,
+    solution_order: [
+        "diagnosis",
+        "algorithms",
+        "commodity",
+        "crisis",
+        "medication",
+        "communication",
+        "decontamination",
+        "remote_healthcare",
+        "prevention",
+        "quarantine_life",
+        "remote_work",
+        "temporary_hospitals",
+        "other"
+    ],
+    create_links: function(node) {
+        var wrapper = document.getElementById("sol_links");
+        if (wrapper == null) {
+            RAYET.log("Wrapper not found!");
+            return;
+        }
+		for (var i=0; i < RAYET.Solutions.solution_order.length; i++) {
+            var key = RAYET.Solutions.solution_order[i];
+            var data = RAYET.SolutionCategories[key];
+            if (data != undefined) {
+                // RAYET.log(JSON.stringify(data));
+                var li = document.createElement("li");
+                li.setAttribute("class", "nav-item");
+                li.setAttribute("id", key);
+
+                var atag = document.createElement("a");
+                atag.setAttribute("class", "nav-link");
+                var href='javascript:RAYET.Solutions.load_category("{0}");'.format(key);
+                atag.setAttribute("href", href);
+                atag.innerText = data.title;
+                li.appendChild(atag);
+                wrapper.appendChild(li);
+            }
+        }
+    },
+    load_category: function(key) {
+        RAYET.log("load_category: " + key);
+        var data = RAYET.SolutionCategories[key];
+        if (data != undefined) {
+            var iframe = document.getElementById("airtable_solutions");
+            var src = "https://airtable.com/embed/{0}?backgroundColor=blue&layout=card&viewControls=on".format(data.key);
+            iframe.setAttribute("src", src);
+        } else {
+            RAYET.log("Lookup failed for key: " + key);
+        }
+    }
+};
+
+RAYET.SolutionCategories = {
+	"diagnosis": {
+        "title":"Diagnosis & Screening",
+		"key":"shrtGQcUPXluvcBpX"
+    },
+	"algorithms": {
+        "title":"Data Science & Algorithms",
+		"key":"shra91HEgk8P5e2VU"
+    },
+	"commodity": {
+        "title":"Commodity Medical Supply",
+		"key":"shr2UfMKQqqHxtLz9"
+    },
+	"crisis": {
+        "title":"Crisis Management",
+		"key":"shraF3XaR5IWtySW5"
+    },
+	"medication": {
+        "title":"Medication",
+		"key":"shra91HEgk8P5e2VU"
+    },
+	"communication": {
+        "title":"Communication & Information",
+		"key":"shrGMKlVrg0B7OaAq"
+    },
+	"decontamination": {
+        "title":"Decontamination",
+		"key":"shryTwrEVCassnDwC"
+    },
+	"remote_healthcare": {
+        "title":"Remote Healthcare",
+		"key":"shrU9b5rzBNnezO57"
+    },
+	"prevention": {
+        "title":"Prevention & Education",
+		"key":"shrhvxc2qfzVUbFPc"
+    },
+	"quarantine_life": {
+        "title":"Quarantine Life",
+		"key":"shrhQEi2RoxQlpJ4r"
+    },
+	"remote_work": {
+        "title":"Remote Work",
+		"key":"shrGLwCHYV9Odf9uF"
+    },
+	"other": {
+        "title":"Other",
+		"key":"shr8JIILpoe572ff2"
+    },
+	"temporary_hospitals": {
+        "title":"Temporary Hospitals",
+		"key":"shr15XBJD4aKGXKR9"
+    }
+};
+
 const isLocalhost = Boolean(
     window.location.hostname === 'localhost' ||
       // [::1] is the IPv6 localhost address.
