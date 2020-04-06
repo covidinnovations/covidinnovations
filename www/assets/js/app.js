@@ -6,7 +6,7 @@ String.prototype.format = function () {
     });
 };
 
-var RAYET = {
+var COVID = {
     debugOn: true,
     mode: "landing",
     log: function (txt) {
@@ -91,7 +91,7 @@ var RAYET = {
 };
 
 /// Javascript for login page
-RAYET.Solutions = {
+COVID.Solutions = {
     status: "",
     // The currently selected category index in the Browse Solutions page
     current_index: 0,
@@ -113,21 +113,21 @@ RAYET.Solutions = {
     create_links: function(node) {
         var wrapper = document.getElementById("sol_links");
         if (wrapper == null) {
-            RAYET.log("Wrapper not found!");
+            COVID.log("Wrapper not found!");
             return;
         }
-		for (var i=0; i < RAYET.Solutions.solution_order.length; i++) {
-            var key = RAYET.Solutions.solution_order[i];
-            var data = RAYET.SolutionCategories[key];
+		for (var i=0; i < COVID.Solutions.solution_order.length; i++) {
+            var key = COVID.Solutions.solution_order[i];
+            var data = COVID.SolutionCategories[key];
             if (data != undefined) {
-                // RAYET.log(JSON.stringify(data));
+                // COVID.log(JSON.stringify(data));
                 var li = document.createElement("li");
                 li.setAttribute("class", "nav-item");
                 li.setAttribute("id", key);
 
                 var atag = document.createElement("a");
                 atag.setAttribute("class", "nav-link");
-                var href='javascript:RAYET.Solutions.load_category("{0}");'.format(key);
+                var href='javascript:COVID.Solutions.load_category_index({0});'.format(i);
                 atag.setAttribute("href", href);
                 atag.innerText = data.title;
                 li.appendChild(atag);
@@ -135,20 +135,30 @@ RAYET.Solutions = {
             }
         }
     },
-    load_category: function(key) {
-        RAYET.log("load_category: " + key);
-        var data = RAYET.SolutionCategories[key];
+    load_category_index: function(index) {
+        var key = COVID.Solutions.solution_order[index];
+        var data = COVID.SolutionCategories[key];
+        COVID.log("load_category: " + key);
         if (data != undefined) {
             var iframe = document.getElementById("airtable_solutions");
             var src = "https://airtable.com/embed/{0}?backgroundColor=blue&layout=card&viewControls=on".format(data.key);
             iframe.setAttribute("src", src);
+
+            var nodes = document.getElementById('sol_links').getElementsByTagName("a");
+            for (let i = 0; i < nodes.length; i++) {
+                nodes[i].setAttribute("class", "nav-link");
+            }
+            var node = document.getElementById(key);
+            var link = node.firstChild;
+            link.setAttribute("class", "nav-link active");
+
         } else {
-            RAYET.log("Lookup failed for key: " + key);
+            COVID.log("Lookup failed for key: " + key);
         }
     }
 };
 
-RAYET.SolutionCategories = {
+COVID.SolutionCategories = {
 	"diagnosis": {
         "title":"Diagnosis & Screening",
 		"key":"shrtGQcUPXluvcBpX"

@@ -161,7 +161,8 @@
     <div class="footer-bottom">
         <h5>Covid Innovations is a non-profit initiative.</h5>
         <h5>We are looking for people who can help
-            spread the word! Join the project <a href="https://helpwithcovid.com/projects/190" target="_blank">here</a></h5>
+            spread the word! Join the project <a href="https://helpwithcovid.com/projects/190" target="_blank">here</a>
+        </h5>
     </div>
 </footer>
 <!-- end footer -->
@@ -180,19 +181,25 @@
 <script src="/js/app.min.js"></script>
 
 <script>
-    RAYET.domLoaded(function() {
+    COVID.domLoaded(function () {
         var date = new Date();
         var dt = date.toDateString();
         var time = date.toLocaleTimeString();
-        let page = RAYET.getLastPath();
-        RAYET.log("Loaded page [{0}] at {1} {2}".format(page, dt, time));
+        let page = COVID.getLastPath();
+        COVID.log("Loaded page [{0}] at {1} {2}".format(page, dt, time));
 
-        $('#preloader').fadeOut('slow', function () {
-            $(this).remove();
-        });
+        switch (page) {
+            case "browse":
+                COVID.Solutions.create_links();
+                COVID.Solutions.load_category_index(0);
+
+                break;
+            default:
+                
+        }
+
     });
 </script>
-
 
 </body>
 </html>

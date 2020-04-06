@@ -51,16 +51,17 @@
 <script src="{{ $script.Permalink }}"></script>
 
 <script>
-    RAYET.domLoaded(function () {
+    COVID.domLoaded(function () {
         var date = new Date();
         var dt = date.toDateString();
         var time = date.toLocaleTimeString();
-        let page = RAYET.getLastPath();
-        RAYET.log("Loaded page [{0}] at {1} {2}".format(page, dt, time));
+        let page = COVID.getLastPath();
+        COVID.log("Loaded page [{0}] at {1} {2}".format(page, dt, time));
 
         switch (page) {
             case "browse":
-                RAYET.Solutions.create_links();
+                COVID.Solutions.create_links();
+                COVID.Solutions.load_category_index(0);
 
                 break;
             default:
