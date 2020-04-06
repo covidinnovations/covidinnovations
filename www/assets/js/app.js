@@ -90,11 +90,8 @@ var COVID = {
     // },
 };
 
-/// Javascript for login page
+/// Javascript for Browse Solutions page
 COVID.Solutions = {
-    status: "",
-    // The currently selected category index in the Browse Solutions page
-    current_index: 0,
     solution_order: [
         "diagnosis",
         "algorithms",
