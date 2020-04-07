@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "/en/"
 publishDir = "../public"
 languageCode = "en-us"
 title = "Covid Tenders"
