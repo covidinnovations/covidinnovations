@@ -1,40 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on Covid Tenders</title>
-    <link>/en/</link>
-    <description>Recent content in Home on Covid Tenders</description>
+    <title>Covid Tenders Website on Covid Tenders</title>
+    <link>/en/en/</link>
+    <description>Recent content in Covid Tenders Website on Covid Tenders</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 22 Dec 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/en/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/en/en/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>First Post</title>
-      <link>/en/2020/03/first-post/</link>
+      <link>/en/en/2020/03/first-post/</link>
       <pubDate>Sat, 07 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/en/2020/03/first-post/</guid>
+      <guid>/en/en/2020/03/first-post/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Browse Solutions</title>
-      <link>/en/solutions/browse/</link>
+      <link>/en/en/solutions/browse/</link>
       <pubDate>Sun, 22 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>/en/solutions/browse/</guid>
+      <guid>/en/en/solutions/browse/</guid>
       <description>We will publish all innovations here once the database has reached 100 submissions. Please help us spread the word so we can reach that number fast!</description>
     </item>
     
     <item>
       <title>Contact</title>
-      <link>/en/contact/feedback/</link>
+      <link>/en/en/contact/feedback/</link>
       <pubDate>Sun, 22 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>/en/contact/feedback/</guid>
+      <guid>/en/en/contact/feedback/</guid>
       <description></description>
     </item>
     

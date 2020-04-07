@@ -3,82 +3,82 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/en/2020/03/first-post/</loc>
+    <loc>/en/en/2020/03/first-post/</loc>
     <lastmod>2020-03-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/en/tenders/</loc>
+    <loc>/en/en/tenders/</loc>
     <lastmod>2019-12-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/en/about/</loc>
-    <lastmod>2019-12-22T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="cn"
-                href="/cn/about/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/en/about/"
-                />
-  </url>
-  
-  <url>
-    <loc>/en/solutions/</loc>
-    <lastmod>2019-12-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/en/solutions/browse/</loc>
-    <lastmod>2019-12-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/en/contact/</loc>
-    <lastmod>2019-12-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/en/contact/feedback/</loc>
-    <lastmod>2019-12-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/en/</loc>
+    <loc>/en/en/about/</loc>
     <lastmod>2019-12-22T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="/cn/"
+                href="/en/cn/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/"
+                href="/en/en/about/"
                 />
   </url>
   
   <url>
-    <loc>/en/news/</loc>
+    <loc>/en/en/solutions/</loc>
+    <lastmod>2019-12-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/en/en/solutions/browse/</loc>
+    <lastmod>2019-12-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/en/en/contact/</loc>
+    <lastmod>2019-12-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/en/en/contact/feedback/</loc>
+    <lastmod>2019-12-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/en/en/</loc>
     <lastmod>2019-12-22T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="/cn/news/"
+                href="/en/cn/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/news/"
+                href="/en/en/"
                 />
   </url>
   
   <url>
-    <loc>/en/404/</loc>
+    <loc>/en/en/news/</loc>
+    <lastmod>2019-12-22T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="/en/cn/news/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/en/news/"
+                />
+  </url>
+  
+  <url>
+    <loc>/en/en/404/</loc>
     <lastmod>2018-02-10T10:52:03+07:00</lastmod>
   </url>
   

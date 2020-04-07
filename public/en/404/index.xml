@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Page Not Found on Covid Tenders</title>
-    <link>/en/404/</link>
+    <link>/en/en/404/</link>
     <description>Recent content in Page Not Found on Covid Tenders</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 10 Feb 2018 10:52:03 +0700</lastBuildDate>
     
-	<atom:link href="/en/404/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/en/en/404/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

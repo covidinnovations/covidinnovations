@@ -1,5 +1,5 @@
 ---
-title: 'Home'
+title: 'Covid Tenders Website'
 section1: 'Share your solution with governments/procurers worldwide'
 section2: 'One submission, global reach'
 section3: 'Here is how it works'
