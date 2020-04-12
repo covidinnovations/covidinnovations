@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Add a Solution to the COVID Innovations Database on Covid Tenders</title>
+    <link>/solutions/</link>
+    <description>Recent content in Add a Solution to the COVID Innovations Database on Covid Tenders</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 22 Dec 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/solutions/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Browse Solutions</title>
+      <link>/solutions/browse/</link>
+      <pubDate>Sun, 22 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/solutions/browse/</guid>
+      <description>We will publish all innovations here once the database has reached 100 submissions. Please help us spread the word so we can reach that number fast!</description>
+    </item>
+    
+  </channel>
+</rss>

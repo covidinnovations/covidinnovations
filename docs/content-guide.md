@@ -103,6 +103,20 @@ when the site is generated again. A date in the future means that the page will 
 
 ## Multi-Language Support
 
+Translating the site to other languages requires more technical expertise than a content editor is
+expected to have. Still, this information is provided here to help understand the concepts and
+process of multi-language support in this website.
+
+### Language Menu Setup
+
+
+
+### Adding a Language
+
+
+
+### Translating for Other Languages
+
 You probably have noticed the the website defaults to English and shows `/en` on the URL path. The
 site can also support multiple languages if configured for it. Our intention is to add several
 language translations to the site, so that they can be accessed through language-specific URL paths
