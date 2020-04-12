@@ -3,6 +3,14 @@
 title: 'Browse Solutions'
 date: 2019-12-22
 draft: false
+description: >
+  The Solutions Database provides a convenient way to browse submissions, organized by category.
+instructions: >
+    You can use the "Filter" button on the top of the table to filter Solutions by:  Company size,
+    country, Keyword (use "Solution Detail" or "Title" fields)
+disclaimer: >
+    Disclaimer: The Information provided in the below database has been submitted by companies directly
+    and has not been reviewed by covidtenders.org. We are considering a peer-review process in the
+    future (see [About page](/about)). [Please notify us](/contact/feedback) for any comments or inquiries.
 ---
 
-We will publish all innovations here once the database has reached 100 submissions. Please help us spread the word so we can reach that number fast! 
