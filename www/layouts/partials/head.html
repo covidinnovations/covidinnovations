@@ -5,14 +5,15 @@
     {{ with .Site.Params.author }}
     <meta name="author" content="{{ . }}">{{ end }}
     {{ template "_internal/opengraph.html" . }}
+    {{ template "_internal/twitter_cards.html" . }}
 
     {{ hugo.Generator }}
     {{ partial "analytics.html" . }}
 
-    {{ if eq .Page.Title "Covid" }}
-    <title>Covid Innovations</title>
+    {{ if .IsHome }}
+    <title>{{ .Site.Title }}</title>
     {{ else }}
-    <title>Covid Innovations | {{ .Page.Title }}</title>
+    <title>{{ .Site.Title }} | {{ .Page.Title }}</title>
     {{ end }}
 
     {{ "<!-- Mobile Specific Meta -->" | safeHTML }}
