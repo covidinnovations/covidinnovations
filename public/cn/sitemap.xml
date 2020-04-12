@@ -3,12 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/cn/</loc>
+    <lastmod>2020-04-03T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="/cn/"
+                />
+  </url>
+  
+  <url>
     <loc>/cn/news/</loc>
     <lastmod>2020-04-03T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/news/"
+                href="/news/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -23,26 +38,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/about/"
+                href="/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
                 href="/cn/about/"
-                />
-  </url>
-  
-  <url>
-    <loc>/cn/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="cn"
-                href="/cn/"
                 />
   </url>
   

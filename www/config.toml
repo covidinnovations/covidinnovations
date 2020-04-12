@@ -16,8 +16,9 @@ enableGitInfo = false
 pygmentsCodeFences = true
 
 # Multilangues setup
-# Renders the default content language in subdir, e.g. /en/. The root directory / will redirect to /en/
-defaultContentLanguageInSubdir = true
+# Set to false so that English is rendered at the base URL instead of /en
+# Other languages will still render in subdir path (e.g. /cn/)
+defaultContentLanguageInSubdir = false
 DefaultContentLanguage = "en"
 
 [params]

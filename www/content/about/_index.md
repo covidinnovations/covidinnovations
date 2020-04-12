@@ -2,6 +2,9 @@
 title: 'About'
 date: 2019-12-22
 draft: false
+description: >
+  We are committed to slow down the spread of the virus and save lives by accelerating the
+  technological innovation for our healthcare system.
 ---
 
 Covid Tenders is a non-profit initiative launched by a group of volunteers. It was started by [Basile
@@ -25,6 +28,17 @@ technological innovation for our healthcare system.
   help us improve this site or review solutions
 
 ## FAQ
+
+**Q: Has the data on your website been reviewed ? How do I know it is truthful?**
+
+A: [The tenders are being reviewed](/tenders) by covidtenders.org before being listed on the database. However,
+the [solution database](/solutions/browse) is entirely crowd-sourced. We will monitor the quality of the data [submitted
+on our website](/solutions), and might put in place a peer review system if necessary in the future. Covidtenders
+or La French Tech does not take any responsibility and does not endorse any solution submitted
+through this website. It is up to the buyer to perform a due diligence of the seller he contacts
+through our exchange.
+
+---
 
 **Q: My solution has confidential data. Will this be shared in public?**
 
