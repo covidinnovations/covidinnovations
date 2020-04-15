@@ -13,8 +13,8 @@ description: >
     has a demand, in a peer-to-peer fashion.
 ---
 
-The Coronavirus creates urgent demand for specialized technologies in airports, quarantine zones,
-hospitals, logistic supply, prisons,... Companies have been coming up with solutions that can be
+The COVID-19 pandemic creates urgent demand for specialized technologies in airports, quarantine zones,
+hospitals, logistics infrastructure, and prisons. Companies have devised solutions which can be
 replicated in other countries, granted that they can match and talk to the buyers directly.
 
 We want to facilitate the exchange of technology by opening up an open, public database of COVID-19
