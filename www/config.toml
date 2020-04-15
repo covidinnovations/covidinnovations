@@ -55,7 +55,7 @@ DefaultContentLanguage = "en"
 
     [[menu.nav]]
         name    = "solutions"
-        url     = "solutions"
+        url     = "solutions/submit"
         weight  = 2
 
     [[menu.nav]]

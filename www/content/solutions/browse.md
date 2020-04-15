@@ -3,6 +3,7 @@
 title: 'Browse Solutions'
 date: 2019-12-22
 draft: false
+layout: browse
 description: >
   The Solutions Database provides a convenient way to browse submissions, organized by category.
 instructions: >

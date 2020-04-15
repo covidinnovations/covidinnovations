@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Are you a company offering a COVID solution? on Covid Tenders</title>
+    <title>Are you a company offering a COVID solution? on COVID Tenders - An Open Database of Government Tenders and Technology Solutions against COVID-19</title>
     <link>/solutions/</link>
-    <description>Recent content in Are you a company offering a COVID solution? on Covid Tenders</description>
+    <description>Recent content in Are you a company offering a COVID solution? on COVID Tenders - An Open Database of Government Tenders and Technology Solutions against COVID-19</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 22 Dec 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/solutions/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Are you a company offering a COVID solution?</title>
+      <link>/solutions/submit/</link>
+      <pubDate>Sun, 22 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/solutions/submit/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Browse Solutions</title>
