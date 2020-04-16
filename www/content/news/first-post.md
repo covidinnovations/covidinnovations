@@ -10,6 +10,10 @@ weight: 1
 
 # Covidtenders.org is hiring a Community Manager
 
+<img src="../../assets/communitymanagerimage.jpg"
+     alt="Community Manager Image"
+     style="float: left; margin-right: 10px;" />
+
 Dear all,
 
 Thanks to the generous support from a donor, we have received $2k of funding for our non-profit website. 
