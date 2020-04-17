@@ -40,3 +40,7 @@ Volunteer Coordination:
 
 Please reach out to basile@blockdynamics.io if interested. Thank you !
 The CovidTenders.org Team
+
+<img src="../../assets/covidtenderstextlogosmall.png"
+     alt="Community Manager Image"
+     style="float: left; margin-right: 10px;" />
