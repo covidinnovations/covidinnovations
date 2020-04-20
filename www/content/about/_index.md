@@ -24,7 +24,7 @@ technological innovation for our healthcare system.
 * **Spread the word** to companies that create solutions for COVID-19
 * **Help us submit new tenders** and connect to institutional buyers
 * Support our non-profit initative by becoming a partner and **share the website** link in your community
-* **[Join our Slack Community](https://join.slack.com/t/covidinnovations/shared_invite/zt-ct5vul0z-sLapNdP03~~AIp~WSBBsvg)** to
+* **[Join our Slack Community](https://join.slack.com/t/covidinnovations/shared_invite/zt-dscqlsd0-efAXxIWeXr0e40b2lkVqxQ)** to
   help us improve this site or review solutions
 
 ## FAQ
