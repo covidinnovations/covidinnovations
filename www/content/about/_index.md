@@ -1,5 +1,5 @@
 ---
-title: 'About'
+title: "About"
 date: 2019-12-22
 draft: false
 description: >
@@ -11,8 +11,7 @@ Covid Tenders is a non-profit initiative launched by a group of volunteers. It w
 Verhulst](https://www.linkedin.com/in/basile-verhulst-a258a46b/) [(contact)](mailto:basile@blockdynamics.io) who has founded several high-tech
 startups in Asia and Paris in the past.
 
-It is an initiative launched and supported by the [French Tech Community in Asia](
-https://hk.lafrenchtech.com/). La French Tech is a unique movement bringing together startups,
+It is an initiative launched and supported by the [French Tech Community in Asia](https://hk.lafrenchtech.com/). La French Tech is a unique movement bringing together startups,
 investors, policymakers and community builders to foster the growth of the startup ecosystem in
 France and across the world.
 
@@ -21,11 +20,11 @@ technological innovation for our healthcare system.
 
 ## HOW YOU CAN HELP
 
-* **Spread the word** to companies that create solutions for COVID-19
-* **Help us submit new tenders** and connect to institutional buyers
-* Support our non-profit initative by becoming a partner and **share the website** link in your community
-* **[Join our Slack Community](https://join.slack.com/t/covidinnovations/shared_invite/zt-ct5vul0z-sLapNdP03~~AIp~WSBBsvg)** to
+- **Spread the word** to companies that create solutions for COVID-19
+- Support our non-profit initative by becoming a partner and **share the website** link in your community
+- **[Join our Slack Community](https://join.slack.com/t/covidinnovations/shared_invite/zt-dscqlsd0-efAXxIWeXr0e40b2lkVqxQ)** to
   help us improve this site or review solutions
+- **Help us submit new tenders** and connect to institutional buyers
 
 ## FAQ
 
