@@ -1,0 +1,37 @@
+{{ define "main" }}
+
+<div class="title text-center mt-40">
+    <h2>{{ .Title }}</h2>
+    <span class="border"></span>
+</div>
+
+<div class="container solutions">
+    <div class="row justify-content-center">
+        <div class="col-md-12">
+            <ul id="sol_links" class="nav nav-pills">
+
+            </ul>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-20">
+        <div class="col-md-12">
+            {{ with .Params.instructions }}
+            <p class="info text-center">{{ . | markdownify }}</p>
+            {{ end }}
+        </div>
+    </div>
+</div>
+
+{{ partial "embed-solutions.html" . }}
+
+<div class="container solutions">
+    <div class="row justify-content-center mb-30">
+        <div class="col-md-12">
+            {{ with .Params.disclaimer }}
+            <p class="smallprint">{{ . | markdownify }}</p>
+            {{ end }}
+        </div>
+    </div>
+</div>
+
+{{ end }}

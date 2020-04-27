@@ -30,9 +30,9 @@ technological innovation for our healthcare system.
 
 **Q: Has the data on your website been reviewed ? How do I know it is truthful?**
 
-A: [The tenders are being reviewed](/tenders) by covidtenders.org before being listed on the database. However,
-the [solution database](/solutions/browse) is entirely crowd-sourced. We will monitor the quality of the data [submitted
-on our website](/solutions), and might put in place a peer review system if necessary in the future. Covidtenders
+A: The tenders are being reviewed by covidtenders.org before being listed on the database. However,
+the solution database is entirely crowd-sourced. We will monitor the quality of the data submitted
+on our website, and might put in place a peer review system if necessary in the future. Covidtenders
 or La French Tech does not take any responsibility and does not endorse any solution submitted
 through this website. It is up to the buyer to perform a due diligence of the seller he contacts
 through our exchange.

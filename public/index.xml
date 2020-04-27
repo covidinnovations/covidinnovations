@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Covid Tenders Website on Covid Tenders</title>
+    <title>Covid Tenders Website on COVID Tenders - An Open Database of Government Tenders and Technology Solutions against COVID-19</title>
     <link>/</link>
-    <description>Recent content in Covid Tenders Website on Covid Tenders</description>
+    <description>Recent content in Covid Tenders Website on COVID Tenders - An Open Database of Government Tenders and Technology Solutions against COVID-19</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 22 Dec 2019 00:00:00 +0000</lastBuildDate>
@@ -17,6 +17,15 @@
       <pubDate>Sat, 07 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>/2020/03/first-post/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Are you a company offering a COVID solution?</title>
+      <link>/solutions/submit/</link>
+      <pubDate>Sun, 22 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/solutions/submit/</guid>
       <description></description>
     </item>
     

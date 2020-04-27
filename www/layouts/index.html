@@ -78,7 +78,7 @@
   </section>
 
   <!-- Section 4 -->
-  <section class="section-sm mt-20" id="how">
+  <section class="section-sm mt-20" id="how" class="help">
     <div class="container">
       <div class="title text-center">
         <h2>{{ .Params.Section4 }}</h2>
@@ -90,8 +90,11 @@
 
       <div class="row justify-content-center">
         <div class="col-md-12">
-          <h4 style="color: red;">
+          <h4 class="help_message">
             {{ .help_message }}
+          </h4>
+          <h4 class="help_donate">
+            {{ .help_donate | markdownify }}
           </h4>
         </div>
       </div>
