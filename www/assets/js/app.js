@@ -88,6 +88,51 @@ var COVID = {
     // modifyButton: function(el, rename, addclass, removeclass) {
 
     // },
+    share: async function (e) {
+        e.preventDefault();
+
+        if (this.shareFeatureDetection() === true) {
+            const shareData = {
+                title: 'Covid Tenders Website',
+                text: 'COVID Tenders is providing an open, public database of COVID-19 innovations. Suppliers of tech solutions can directly post their details online, and be openly searched and browsed by anyone who has a demand, in a peer-to-peer fashion.',
+                url: 'https://covidtenders.org',
+            }
+            try {
+                await navigator.share(shareData);
+                this.log('COVID shared successfully');
+            } catch (err) {
+
+                this.log('COVID shared error ' + err.message + ' so copy to clipboard');
+            } finally {
+                return false;
+            }
+        } else {
+            var url = location.href;
+
+            var copyText = document.querySelector("meta[name='description']").getAttribute('content');
+
+            var stringToCopy = copyText.concat(" Find out more at: " + url);
+
+            var invisibleInput = document.createElement('input');
+            invisibleInput.setAttribute('id', 'foobar')
+            invisibleInput.setAttribute('value', stringToCopy)
+            invisibleInput.style.display = "none";
+
+            document.body.appendChild(invisibleInput);
+
+            invisibleInput.select();
+            invisibleInput.setSelectionRange(0, 99999);
+
+            document.execCommand("copy");
+
+            document.body.removeChild(invisibleInput);
+
+            alert("Share this text which has been copied to your clip board.\n\r " + stringToCopy);
+        }
+    },
+    shareFeatureDetection: function () {
+        return navigator.share !== undefined ? true : false;
+    }
 };
 
 /// Javascript for Browse Solutions page
@@ -108,13 +153,13 @@ COVID.Solutions = {
         "temporary_hospitals",
         "other"
     ],
-    create_links: function(node) {
+    create_links: function (node) {
         var wrapper = document.getElementById("sol_links");
         if (wrapper == null) {
             COVID.log("Wrapper not found!");
             return;
         }
-		for (var i=0; i < COVID.Solutions.solution_order.length; i++) {
+        for (var i = 0; i < COVID.Solutions.solution_order.length; i++) {
             var key = COVID.Solutions.solution_order[i];
             var data = COVID.SolutionCategories[key];
             if (data != undefined) {
@@ -125,7 +170,7 @@ COVID.Solutions = {
 
                 var atag = document.createElement("a");
                 atag.setAttribute("class", "nav-link");
-                var href='javascript:COVID.Solutions.load_category_index({0});'.format(i);
+                var href = 'javascript:COVID.Solutions.load_category_index({0});'.format(i);
                 atag.setAttribute("href", href);
                 atag.innerText = data.title;
                 li.appendChild(atag);
@@ -133,7 +178,7 @@ COVID.Solutions = {
             }
         }
     },
-    load_category_index: function(index) {
+    load_category_index: function (index) {
         var key = COVID.Solutions.solution_order[index];
         var data = COVID.SolutionCategories[key];
         COVID.log("load_category: " + key);
@@ -157,70 +202,70 @@ COVID.Solutions = {
 };
 
 COVID.SolutionCategories = {
-	"all": {
-        "title":"All Solutions",
-		"key":"shr2yOp34dqwVoYbu"
+    "all": {
+        "title": "All Solutions",
+        "key": "shr2yOp34dqwVoYbu"
     },
-	"diagnosis": {
-        "title":"Diagnosis & Screening",
-		"key":"shrtGQcUPXluvcBpX"
+    "diagnosis": {
+        "title": "Diagnosis & Screening",
+        "key": "shrtGQcUPXluvcBpX"
     },
-	"algorithms": {
-        "title":"Data Science & Algorithms",
-		"key":"shra91HEgk8P5e2VU"
+    "algorithms": {
+        "title": "Data Science & Algorithms",
+        "key": "shra91HEgk8P5e2VU"
     },
-	"commodity": {
-        "title":"Commodity Medical Supply",
-		"key":"shr2UfMKQqqHxtLz9"
+    "commodity": {
+        "title": "Commodity Medical Supply",
+        "key": "shr2UfMKQqqHxtLz9"
     },
-	"crisis": {
-        "title":"Crisis Management",
-		"key":"shraF3XaR5IWtySW5"
+    "crisis": {
+        "title": "Crisis Management",
+        "key": "shraF3XaR5IWtySW5"
     },
-	"medication": {
-        "title":"Medication",
-		"key":"shra91HEgk8P5e2VU"
+    "medication": {
+        "title": "Medication",
+        "key": "shra91HEgk8P5e2VU"
     },
-	"communication": {
-        "title":"Communication & Information",
-		"key":"shrGMKlVrg0B7OaAq"
+    "communication": {
+        "title": "Communication & Information",
+        "key": "shrGMKlVrg0B7OaAq"
     },
-	"decontamination": {
-        "title":"Decontamination",
-		"key":"shryTwrEVCassnDwC"
+    "decontamination": {
+        "title": "Decontamination",
+        "key": "shryTwrEVCassnDwC"
     },
-	"remote_healthcare": {
-        "title":"Remote Healthcare",
-		"key":"shrU9b5rzBNnezO57"
+    "remote_healthcare": {
+        "title": "Remote Healthcare",
+        "key": "shrU9b5rzBNnezO57"
     },
-	"prevention": {
-        "title":"Prevention & Education",
-		"key":"shrhvxc2qfzVUbFPc"
+    "prevention": {
+        "title": "Prevention & Education",
+        "key": "shrhvxc2qfzVUbFPc"
     },
-	"quarantine_life": {
-        "title":"Quarantine Life",
-		"key":"shrhQEi2RoxQlpJ4r"
+    "quarantine_life": {
+        "title": "Quarantine Life",
+        "key": "shrhQEi2RoxQlpJ4r"
     },
-	"remote_work": {
-        "title":"Remote Work",
-		"key":"shrGLwCHYV9Odf9uF"
+    "remote_work": {
+        "title": "Remote Work",
+        "key": "shrGLwCHYV9Odf9uF"
     },
-	"other": {
-        "title":"Other",
-		"key":"shr8JIILpoe572ff2"
+    "other": {
+        "title": "Other",
+        "key": "shr8JIILpoe572ff2"
     },
-	"temporary_hospitals": {
-        "title":"Temporary Hospitals",
-		"key":"shr15XBJD4aKGXKR9"
+    "temporary_hospitals": {
+        "title": "Temporary Hospitals",
+        "key": "shr15XBJD4aKGXKR9"
     }
 };
 
 const isLocalhost = Boolean(
     window.location.hostname === 'localhost' ||
-      // [::1] is the IPv6 localhost address.
-      window.location.hostname === '[::1]' ||
-      // 127.0.0.1/8 is considered localhost for IPv4.
-      window.location.hostname.match(
+    // [::1] is the IPv6 localhost address.
+    window.location.hostname === '[::1]' ||
+    // 127.0.0.1/8 is considered localhost for IPv4.
+    window.location.hostname.match(
         /^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/
-      )
-  );
+    )
+);

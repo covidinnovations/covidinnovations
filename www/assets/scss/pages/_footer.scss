@@ -39,30 +39,25 @@
   }
 }
 .footer-bottom {
-  text-align: center;
   background-color: $bottom_footer_bg_color;
   border-top: 1px solid #2c2c2c;
   padding: 30px 0;
+  height: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-around;
+
 
   > * {
     align-self: center;
     max-width: 80%;
   }
 
-  h1 {
-    color: white;
-    &.larger {
-      font-size: 3rem;
-    }
-  }
   h5 {
-    font-size: 12px;
+    font-size: 16px;
     line-height: 1;
     color: white;
     font-weight: 400;
-    text-transform: uppercase;
     letter-spacing: 2px;
     margin-top: 7px;
     margin-bottom: 3px;
@@ -81,6 +76,14 @@
   }
   a {
     color: $default_tint;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-self: flex-start;
+    width: 30%;
   }
 }
 .partners {
