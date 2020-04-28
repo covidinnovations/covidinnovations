@@ -46,6 +46,10 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  
+  @media #{$media-size-phone} {
+    flex-direction: column;
+  }
 
 
   > * {
@@ -55,7 +59,7 @@
 
   h5 {
     font-size: 16px;
-    line-height: 1;
+    line-height: 1.2;
     color: white;
     font-weight: 400;
     letter-spacing: 2px;
@@ -84,6 +88,13 @@
     justify-content: flex-start;
     align-self: flex-start;
     width: 30%;
+    
+    @media #{$media-size-phone} {
+      justify-content: center;
+      align-self: center;
+      width: 90%;
+      margin-bottom: 1em;
+    }
   }
 }
 .partners {
