@@ -53,25 +53,26 @@
   <section class="section-sm mt-20" id="how">
     <div class="container">
       <div class="title text-center">
-        <h2>{{ .Params.Section3 }}</h2>
+        <h2><a href="/tenders" class="link">{{ .Params.Section3 }}</a></h2>
         <span class="border"></span>
       </div>
       {{ $data := index .Site.Data .Site.Language.Lang }}
       {{ with $data.home }}
-          {{ "<!-- About Section Start -->" | safeHTML }}
-          <div class="row justify-content-center">
-              <div class="col">
-                  <ol>
-                      {{ range .how }}
-                      <li>
-                          {{ .text }}
-                      </li>
-                      {{ end }}
-                  </ol>
-              </div>
-          </div>
+      {{ "<!-- About Section Start -->" | safeHTML }}
+      <div class="row justify-content-center">
+        <div class="col">
+          <ol>
+            {{ range .how }}
+            <li>
+              {{ .text | replaceRE `\[(.*)\]\((.*)\)` `<a href="$2">$1</a>` | safeHTML }}
+              <!-- {{ .text }} -->
+            </li>
+            {{ end }}
+          </ol>
+        </div>
+      </div>
 
-          {{"<!-- About section End -->" | safeHTML}}
+      {{"<!-- About section End -->" | safeHTML}}
       {{ end }}
 
     </div>
@@ -86,7 +87,7 @@
       </div>
       {{ $data := index .Site.Data .Site.Language.Lang }}
       {{ with $data.home }}
-          {{ "<!-- About Section Start -->" | safeHTML }}
+      {{ "<!-- About Section Start -->" | safeHTML }}
 
       <div class="row justify-content-center">
         <div class="col-md-12">
@@ -98,7 +99,7 @@
       <div class="row justify-content-center mt-20">
         <div class="col text-center">
           <a class="btn btn-main" style="width:300px" href="{{ "about" | absLangURL }}">
-          {{ .help_cta }}
+            {{ .help_cta }}
           </a>
         </div>
       </div>
