@@ -123,7 +123,6 @@ var COVID = {
             document.body.appendChild(invisibleInput);
 
             invisibleInput.select();
-            console.log(invisibleInput.value);
             invisibleInput.setSelectionRange(0, 99999);
 
             document.execCommand("copy");
