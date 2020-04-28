@@ -1,7 +1,7 @@
 baseURL = "/"
 publishDir = "../public"
 languageCode = "en-us"
-title = "Covid Tenders"
+title = "COVID Tenders - An Open Database of Government Tenders and Technology Solutions against COVID-19"
 theme = "navigator-hugo"
 disableKinds = ["taxonomy", "taxonomyTerm"]
 ignoreFiles = [ "\\.foo$", "\\.boo$" ]
@@ -55,7 +55,7 @@ DefaultContentLanguage = "en"
 
     [[menu.nav]]
         name    = "solutions"
-        url     = "solutions"
+        url     = "solutions/submit"
         weight  = 2
 
     [[menu.nav]]
