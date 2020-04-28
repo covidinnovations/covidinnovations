@@ -29,12 +29,16 @@
         </div>
     </div>
     <div class="footer-bottom">
-        <h5>Covid Innovations is a non-profit initiative.</h5>
-        <h5>We are looking for people who can help
-            spread the word! Join the project <a href="https://helpwithcovid.com/projects/190" target="_blank">here</a>
-        </h5>
-        <h5>This website is being maintained on a shoestring. Any donation can help this project! <a
-        href="mailto:mailto:basile@blockdynamics.io">Contact us for more details</a></h5>
+        <div class="column">
+            <h5>Covid innovations is a non profit initiative. This website is being maintained on a shoestring budget.
+            </h5>
+        </div>
+        <div class="column">
+            <h5><a href="mailto:basile@blockdynamics.io" target="_blank">Please donate here</a></h5>
+            <h5><a href="https://helpwithcovid.com/users/sign_up" target="_blank">Join the project here</a></h5>
+            <h5><a href="#" onclick="COVID.share(event); return false;">Or spread the word
+                    here</a></h5>
+        </div>
     </div>
 </footer>
 {{ "<!-- end footer -->" | safeHTML }}
@@ -67,7 +71,7 @@
 
                 break;
             default:
-                // Do nothing
+            // Do nothing
         }
 
     });
