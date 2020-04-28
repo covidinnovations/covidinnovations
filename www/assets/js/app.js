@@ -113,6 +113,7 @@ var COVID = {
 
             var stringToCopy = copyText.concat(" Find out more at: " + url);
 
+
             var invisibleInput = document.createElement('input');
             invisibleInput.setAttribute('id', 'foobar')
             invisibleInput.setAttribute('value', stringToCopy)
@@ -122,6 +123,7 @@ var COVID = {
             document.body.appendChild(invisibleInput);
 
             invisibleInput.select();
+            console.log(invisibleInput.value);
             invisibleInput.setSelectionRange(0, 99999);
 
             document.execCommand("copy");
