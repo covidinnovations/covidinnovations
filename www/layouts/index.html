@@ -64,7 +64,8 @@
           <ol>
             {{ range .how }}
             <li>
-              {{ .text }}
+              {{ .text | replaceRE `\[(.*)\]\((.*)\)` `<a href="$2">$1</a>` | safeHTML }}
+              <!-- {{ .text }} -->
             </li>
             {{ end }}
           </ol>

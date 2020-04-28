@@ -1,8 +1,8 @@
 how      :
-  - text  : Browse the list of government tenders that call for solutions to the Coronavirus.
-  - text  : Companies can submit details of their innovation to the Solutions Database.
+  - text  : Browse the [list of government tenders](/tenders) that call for solutions to the Coronavirus.
+  - text  : Companies can [submit](/solutions) details of their innovation to the Solutions Database.
   - text  : Covidtenders.org will share the Solutions List directly to all Institutions in the database.
-  - text  : If you agree, your Solution will also be made public to facilitate peer to peer matching.
+  - text  : If you agree, your [Solution](/solutions/browse) will also be made public to facilitate peer to peer matching.
 
 help_message: >
   This platform will only succeed if word reaches enough technology companies. We need your help
