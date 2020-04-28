@@ -116,7 +116,8 @@ var COVID = {
             var invisibleInput = document.createElement('input');
             invisibleInput.setAttribute('id', 'foobar')
             invisibleInput.setAttribute('value', stringToCopy)
-            invisibleInput.style.display = "none";
+            invisibleInput.style.position = "absolute";
+            invisibleInput.style.zIndex = -10;
 
             document.body.appendChild(invisibleInput);
 
