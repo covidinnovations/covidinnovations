@@ -5,7 +5,7 @@ section2: "One submission, global reach"
 section3: "Here is how it works"
 section4: "We need your help"
 section5: "Currently active tenders"
-endorsements: "Endorsed by"
+mentionedIn: "Mentioned in"
 date: 2019-12-22
 draft: false
 description: >
