@@ -24,6 +24,7 @@ DefaultContentLanguage = "en"
 [params]
     author = "Covid Innovations"
     description = "A marketplace for COVID solutions"
+    images = ["images/social/social-share-image.jpg"]
 
 [permalinks]
   news = "/:year/:month/:title/"
