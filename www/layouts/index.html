@@ -16,10 +16,10 @@
 
               <div class="row justify-content-center">
                 <div class="col">
-                  <a class="btn btn-main question" href="{{ "tenders" | absLangURL }}">{{.Params.question1}}</a>
+                  <a class="btn btn-main question effect-button" href="{{ "tenders" | absLangURL }}">{{.Params.question1}}</a>
                 </div>
                 <div class="col">
-                  <a class="btn btn-main question" href="{{ "solutions/browse" | absLangURL }}">{{.Params.question2}}</a>
+                  <a class="btn btn-main question effect-button" href="{{ "solutions/browse" | absLangURL }}">{{.Params.question2}}</a>
                 </div>
               </div>
 
@@ -40,15 +40,15 @@
       </div>
       <div class="row mt-30">
         <div class="col mx-auto">
-          <div class="row justify-content-center">
-            <div class="col">
-              <a class="btn btn-main" href="{{ "solutions" | absLangURL }}">Add a Solution</a>
+          <div class="row justify-content-center column">
+            <div class="col span">
+              <a class="btn btn-main wrap" href="{{ "solutions" | absLangURL }}">Add a Solution</a>
             </div>
-            <div class="col">
-              <a class="btn btn-main" href="{{ "tenders" | absLangURL }}">See Government Tenders</a>
+            <div class="col span">
+              <a class="btn btn-main wrap" href="{{ "tenders" | absLangURL }}">See Government Tenders</a>
             </div>
-            <div class="col">
-              <a class="btn btn-main" href="{{ "solutions/browse" | absLangURL }}">Browse Solutions Database</a>
+            <div class="col span">
+              <a class="btn btn-main wrap" href="{{ "solutions/browse" | absLangURL }}">Browse Solutions Database</a>
             </div>
           </div>
         </div>
@@ -124,7 +124,7 @@
       </div>
       <div class="row justify-content-center mt-20">
         <div class="col text-center">
-          <a class="btn btn-main" style="width:300px" href="{{ "about" | absLangURL }}">
+          <a class="btn btn-main single-button effect-button" href="{{ "about" | absLangURL }}">
             {{ .help_cta }}
           </a>
         </div>
