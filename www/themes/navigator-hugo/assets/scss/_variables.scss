@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 $font_family_1: "Titillium Web", sans-serif;
-$font_family_2: "Playfair Display",sans-serif;
-$font_family_3: 'Open Sans', sans-serif;
+$font_family_2: "Playfair Display", sans-serif;
+$font_family_3: "Open Sans", sans-serif;
 
 $nav_bg_color: #008dc9;
 $default_tint: #008dc9;
@@ -19,9 +19,9 @@ $color_6: #848484;
 $color_7: #777;
 $color_8: #cfcfcf;
 $color_9: #666;
-$color_10: #FFF;
+$color_10: #fff;
 $color_11: #0c0c0c;
-$color_12: #D8000C;
+$color_12: #d8000c;
 $color_13: white;
 $color_14: #444;
 $color_15: #000;
@@ -39,11 +39,11 @@ $color_26: #404040;
 $color_27: #bdbdbd;
 $color_28: #888888;
 $color_29: #656565;
-$background_color_1: #21D6BF;
+$background_color_1: #21d6bf;
 $background_color_2: #000;
 $background_color_3: #ffa535;
 $background_color_4: transparent;
-$background_color_5: #FFBABA;
+$background_color_5: #ffbaba;
 $background_color_6: #6cb670;
 $background_color_7: #f2f6f8;
 $background_color_8: #ff5600;
@@ -74,3 +74,19 @@ $media-size-tablet: "(max-width: 900px)";
   --phoneWidth: (max-width: 684px);
   --tabletWidth: (max-width: 900px);
 }
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+) !default;
+
+@include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
+@include _assert-starts-at-zero($grid-breakpoints);

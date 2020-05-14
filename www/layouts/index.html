@@ -10,22 +10,45 @@
             <h2>{{ .Params.Section1 }}</h2>
             <span class="border"></span>
           </div>
-          <div class="col-md-9 mx-auto">
-            {{ .Content }}
+          <div class="row mx-auto">
+            
+            <div class="col-md-12 mx-auto mt-50">
+
+              <div class="row justify-content-center">
+                <div class="col">
+                  <a class="btn btn-main question effect-button" href="{{ "tenders" | absLangURL }}">{{.Params.question1}}</a>
+                </div>
+                <div class="col">
+                  <a class="btn btn-main question effect-button" href="{{ "solutions/browse" | absLangURL }}">{{.Params.question2}}</a>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col mt-40">
+                  <p>
+                    {{ .Params.contentForQuestion1 }}
+                  </p>
+                  <p>
+                    {{ .Params.contentForQuestion2 }}
+                  </p>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
       <div class="row mt-30">
-        <div class="col-md-10 mx-auto">
-          <div class="row justify-content-center">
-            <div class="col-md">
-              <a class="btn btn-main" href="{{ "solutions" | absLangURL }}">Add a Solution</a>
+        <div class="col mx-auto">
+          <div class="row justify-content-center column">
+            <div class="col span">
+              <a class="btn btn-main wrap" href="{{ "solutions" | absLangURL }}">Add a Solution</a>
             </div>
-            <div class="col-md">
-              <a class="btn btn-main" href="{{ "tenders" | absLangURL }}">See Government Tenders</a>
+            <div class="col span">
+              <a class="btn btn-main wrap" href="{{ "tenders" | absLangURL }}">See Government Tenders</a>
             </div>
-            <div class="col-md">
-              <a class="btn btn-main" href="{{ "solutions/browse" | absLangURL }}">Browse Solutions Database</a>
+            <div class="col span">
+              <a class="btn btn-main wrap" href="{{ "solutions/browse" | absLangURL }}">Browse Solutions Database</a>
             </div>
           </div>
         </div>
@@ -101,7 +124,7 @@
       </div>
       <div class="row justify-content-center mt-20">
         <div class="col text-center">
-          <a class="btn btn-main" style="width:300px" href="{{ "about" | absLangURL }}">
+          <a class="btn btn-main single-button effect-button" href="{{ "about" | absLangURL }}">
             {{ .help_cta }}
           </a>
         </div>
@@ -114,16 +137,20 @@
 
   <section>
     <div class="container">
-      <div class="row justify-content-center">
+      <div class="row justify-content-center mt-30">
         <div class="title text-center">
           <h2>{{ .Params.MentionedIn }}</h2>
           <span class="border"></span>
         </div>
         <div class="endorsements">
           {{ $image := "/images/logos/le-point.svg" }}
-          <img src="{{ $image | absURL }}" alt="endorsed by Le Point" />
+          <a href="https://www.lepoint.fr/" target="_blank">
+            <img src="{{ $image | absURL }}" alt="endorsed by Le Point" />
+          </a>
           {{ $image := "/images/logos/start-up.ro.jpg" }}
-          <img src="{{ $image | absURL }}" alt="endorsed by start-up.ro" width="200" />
+          <a href="https://www.start-up.ro" target="_blank">
+            <img src="{{ $image | absURL }}" alt="endorsed by start-up.ro" width="200" />
+          </a>
         </div>
       </div>
     </div>
