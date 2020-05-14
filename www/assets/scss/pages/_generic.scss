@@ -33,6 +33,13 @@
     padding: 10px 20px;
     margin: 10px 0 0 0;
     width: 260px;
+    &.question {
+      width: 100%;
+      white-space: break-spaces;
+    }
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
   }
   ol,
   ul {
@@ -68,6 +75,9 @@
       justify-content: space-evenly;
       align-items: center;
     }
+  }
+  .mt-10 {
+    margin-top: 5em;
   }
 }
 .about {
