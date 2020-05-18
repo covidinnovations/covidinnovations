@@ -6,40 +6,6 @@
     @media #{$media-size-phone} {
       padding: 20px;
     }
-
-    @include media-breakpoint-up(md) {
-      .column {
-        flex-direction: row;
-      }
-      .span {
-        width: 30%;
-        display: flex;
-        justify-content: center;
-      }
-    }
-
-    @include media-breakpoint-down(md) {
-      .column {
-        flex-direction: row;
-        height: 12em;
-      }
-      .span {
-        width: 30%;
-      }
-    }
-    .single-button {
-      width: auto;
-    }
-
-    @include media-breakpoint-down(sm) {
-      .column {
-        flex-direction: column;
-        height: 12em;
-      }
-      .span {
-        width: 100%;
-      }
-    }
   }
   .title {
     padding-bottom: 10px;
@@ -141,6 +107,33 @@
   }
   .mt-10 {
     margin-top: 5em;
+  }
+
+  .flex-center {
+    display: flex;
+    justify-content: center;
+  }
+
+  @include media-breakpoint-up(md) {
+    .of-rows {
+      color: blue;
+      display: flex;
+    }
+
+    .single-button {
+      width: auto;
+    }
+  }
+
+  @include media-breakpoint-up(sm) {
+    .of-rows {
+      color: pink;
+      display: flex;
+    }
+
+    .wrap {
+      color: pink;
+    }
   }
 }
 .about {
