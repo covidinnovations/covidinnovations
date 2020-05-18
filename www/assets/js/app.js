@@ -140,6 +140,10 @@ var COVID = {
   shareFeatureDetection: function () {
     return navigator.share !== undefined ? true : false;
   },
+  playVideo: function (event) {
+    console.log(event.target);
+    event.target.play();
+  },
 };
 
 /// Javascript for Browse Solutions page
