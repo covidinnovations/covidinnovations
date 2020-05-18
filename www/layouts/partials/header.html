@@ -1,55 +1,86 @@
 {{ "<!-- Fixed Navigation -->" | safeHTML }}
 <!-- <section class="top-bar animated-header"> emprunt depuis timer theme -->
 <section class="header navigation">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <nav class="navbar navbar-expand-md">
-                    {{ $icon := "logo_header.png" }}
-                    <a class="navbar-brand" href="{{ .Site.BaseURL }}" id="logo_text">
-                        <!-- <img src={{ $icon | absURL }} alt="COVID logo" /> -->
-                        COVID Tenders
-                    </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
-                        aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="tf-ion-android-menu"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navigation">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item">
-                                <a class="nav-link"
-                                    href="{{ .Site.BaseURL }}">{{ with .Site.Params.home }}{{ . }}{{ end }}</a>
-                            </li>
-                            {{ range .Site.Menus.nav }}
-                            {{ if .HasChildren }}
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
-                                    aria-haspopup="true" aria-expanded="false">
-                                    {{ .Name }}
-                                </a>
-                                <div class="dropdown-menu">
-                                    {{ range .Children }}
-                                    <a class="dropdown-item" href="{{ .URL | absURL }}">{{ .Name }}</a>
-                                    {{ end }}
-                                </div>
-                            </li>
-                            {{ else }}
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ .URL | absLangURL }}">{{ i18n .Name }}</a>
-                            </li>
-                            {{ end }}
-                            {{ end }}
-                        </ul>
-                    </div>
-                    <!-- <div id="flags">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <nav class="navbar navbar-expand-md">
+          <div class="info">
+            <!-- brand and video -->
+            <div class="brand-video">
+              {{ $icon := "logo_header.png" }}
+              <a class="navbar-brand" href="{{ .Site.BaseURL }}" id="logo_text">
+                <!-- <img src={{ $icon | absURL }} alt="COVID logo" /> -->
+                COVID Tenders
+              </a>
+              <!-- hero video -->
+              <div class="infomercial-video">
+                <video autoplay onclick="COVID.playVideo(event);">
+                  <source src="/video/infomercial.mp4" type="video/mp4" />
+                  Sorry, your browser doesn't support embedded videos.
+                </video>
+              </div>
+            </div>
+
+            <!-- navigation -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navigation"
+              aria-controls="navigation"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="tf-ion-android-menu"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navigation">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ .Site.BaseURL }}"
+                    >{{ with .Site.Params.home }}{{ . }}{{ end }}</a
+                  >
+                </li>
+                {{ range .Site.Menus.nav }} {{ if .HasChildren }}
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    {{ .Name }}
+                  </a>
+                  <div class="dropdown-menu">
+                    {{ range .Children }}
+                    <a class="dropdown-item" href="{{ .URL | absURL }}"
+                      >{{ .Name }}</a
+                    >
+                    {{ end }}
+                  </div>
+                </li>
+                {{ else }}
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ .URL | absLangURL }}"
+                    >{{ i18n .Name }}</a
+                  >
+                </li>
+                {{ end }} {{ end }}
+              </ul>
+            </div>
+          </div>
+          <!-- end info -->
+
+          <!-- <div id="flags">
                         {{ $icon := "country/us.png" }}
                         <a href="/en"><img src={{ $icon | absURL }} alt="English" /></a>
                         {{ $icon := "country/cn.png" }}
                         <a href="/cn"><img src={{ $icon | absURL }} alt="Chinese" /></a>
                     </div> -->
-
-                </nav>
-            </div>
-        </div>
+        </nav>
+      </div>
     </div>
+  </div>
 </section>
