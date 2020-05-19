@@ -7,14 +7,14 @@
         <nav class="navbar navbar-expand-md">
           <div class="info">
             <!-- brand and video -->
-            <div class="brand-video">
-              {{ $icon := "logo_header.png" }}
-              <a class="navbar-brand" href="{{ .Site.BaseURL }}" id="logo_text">
-                <!-- <img src={{ $icon | absURL }} alt="COVID logo" /> -->
-                COVID Tenders
-              </a>
-              <!-- hero video -->
-              <div class="infomercial-video">
+            <!-- <div class="brand-video"> -->
+            {{ $icon := "logo_header.png" }}
+            <a class="navbar-brand" href="{{ .Site.BaseURL }}" id="logo_text">
+              <!-- <img src={{ $icon | absURL }} alt="COVID logo" /> -->
+              COVID Tenders
+            </a>
+            <!-- hero video -->
+            <!-- <div class="infomercial-video">
                 <video
                   autoplay
                   onclick="COVID.playVideo(event);"
@@ -23,8 +23,8 @@
                   <source src="/video/infomercial.mp4" type="video/mp4" />
                   Sorry, your browser doesn't support embedded videos.
                 </video>
-              </div>
-            </div>
+              </div> -->
+            <!-- </div> -->
 
             <!-- navigation -->
             <button
