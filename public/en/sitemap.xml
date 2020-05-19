@@ -3,8 +3,23 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/2020/04/looking-for-a-community-manager/</loc>
-    <lastmod>2020-04-16T00:00:00+00:00</lastmod>
+    <loc>/2020/05/looking-for-a-community-manager/</loc>
+    <lastmod>2020-05-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/news/</loc>
+    <lastmod>2020-05-19T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="/cn/news/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/news/"
+                />
   </url>
   
   <url>
@@ -64,21 +79,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="/"
-                />
-  </url>
-  
-  <url>
-    <loc>/news/</loc>
-    <lastmod>2019-12-22T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="cn"
-                href="/cn/news/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/news/"
                 />
   </url>
   

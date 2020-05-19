@@ -188,6 +188,11 @@
   // }
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 @include media-breakpoint-up(md) {
   .navigation .navbar-nav > li > a {
     // border: 1px dotted white;
