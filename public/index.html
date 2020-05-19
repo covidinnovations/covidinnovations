@@ -75,7 +75,11 @@
               </a>
               
               <div class="infomercial-video">
-                <video autoplay onclick="COVID.playVideo(event);">
+                <video
+                  autoplay
+                  onclick="COVID.playVideo(event);"
+                  ondblclick="COVID.toggleFullScreen(event);"
+                >
                   <source src="/video/infomercial.mp4" type="video/mp4" />
                   Sorry, your browser doesn't support embedded videos.
                 </video>
