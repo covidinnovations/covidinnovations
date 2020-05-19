@@ -140,19 +140,19 @@ var COVID = {
   shareFeatureDetection: function () {
     return navigator.share !== undefined ? true : false;
   },
-  playVideo: function (event) {
-    console.log(event.target);
-    event.target.play();
-  },
-  toggleFullScreen: function (event) {
-    if (!event.target.fullscreenElement) {
-      event.target.requestFullscreen();
-    } else {
-      if (event.target.exitFullscreen) {
-        event.target.exitFullscreen();
-      }
-    }
-  },
+  // playVideo: function (event) {
+  //   console.log(event.target);
+  //   event.target.play();
+  // },
+  // toggleFullScreen: function (event) {
+  //   if (!event.target.fullscreenElement) {
+  //     event.target.requestFullscreen();
+  //   } else {
+  //     if (event.target.exitFullscreen) {
+  //       event.target.exitFullscreen();
+  //     }
+  //   }
+  // },
 };
 
 /// Javascript for Browse Solutions page
