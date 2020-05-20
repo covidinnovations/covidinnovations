@@ -1,0 +1,174 @@
+{{ define "main" }}
+<!-- Section 1 -->
+<div class="home">
+
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="title text-center">
+            <h2>{{ .Params.Section1 }}</h2>
+            <span class="border"></span>
+          </div>
+          <div class="column of-rows">
+                
+                <div class="column col justify-content-center">
+                  <div class="col">
+                    <a class="btn btn-main question effect-button" href="{{ "tenders" | absLangURL }}">{{.Params.question1}}</a>
+                  </div>
+                  <div class="col mt-10">
+                    <p>
+                      {{ .Params.contentForQuestion1 }}
+                    </p>
+                  </div>
+                </div>
+
+                <div class="column col justify-content-center">
+                  <div class="col">
+                    <a class="btn btn-main question effect-button" href="{{ "solutions/browse" | absLangURL }}">{{.Params.question2}}</a>
+                  </div>
+                  <div class="col mt-10">
+                    <p>
+                      {{ .Params.contentForQuestion2 }}
+                    </p>
+                  </div>
+                </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="row mt-30">
+        <div class="col mx-auto flex-center">
+          <div class="row justify-content-center column">
+            <div class="col wrap">
+              <a class="btn btn-main effect-button" href="{{ "solutions" | absLangURL }}">Add a Solution</a>
+            </div>
+            <div class="col wrap">
+              <a class="btn btn-main effect-button" href="{{ "tenders" | absLangURL }}">See Government Tenders</a>
+            </div>
+            <div class="col wrap">
+              <a class="btn btn-main effect-button" href="{{ "solutions/browse" | absLangURL }}">Browse Solutions Database</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2 -->
+  <section class="section-sm mt-20" id="home_map">
+    <div class="container">
+      <div class="title text-center">
+        <h2>{{ .Params.Section2 }}</h2>
+        <span class="border"></span>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          {{ $image := "images/tenders_map_white.jpg" }}
+          <img src="{{ $image | absURL }}" alt="covid map" class="map img-fluid" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3 -->
+  <section class="section-sm mt-20" id="how">
+    <div class="container">
+      <div class="title text-center">
+        <h2><a href="/tenders" class="link">{{ .Params.Section3 }}</a></h2>
+        <span class="border"></span>
+      </div>
+      {{ $data := index .Site.Data .Site.Language.Lang }}
+      {{ with $data.home }}
+      {{ "<!-- About Section Start -->" | safeHTML }}
+      <div class="row justify-content-center">
+        <div class="col">
+          <ol>
+            {{ range .how }}
+            <li>
+              {{ .text | replaceRE `\[(.*)\]\((.*)\)` `<a href="$2">$1</a>` | safeHTML }}
+              <!-- {{ .text }} -->
+            </li>
+            {{ end }}
+          </ol>
+        </div>
+      </div>
+
+      {{"<!-- About section End -->" | safeHTML}}
+      {{ end }}
+
+    </div>
+  </section>
+
+  <!-- Section 4 -->
+  <section class="section-sm mt-20" id="how" class="help">
+    <div class="container">
+      <div class="title text-center">
+        <h2>{{ .Params.Section4 }}</h2>
+        <span class="border"></span>
+      </div>
+      {{ $data := index .Site.Data .Site.Language.Lang }}
+      {{ with $data.home }}
+      {{ "<!-- About Section Start -->" | safeHTML }}
+
+      <div class="row justify-content-center">
+        <div class="col-md-12">
+          <h4 class="help_message">
+            {{ .help_message }}
+          </h4>
+          <h4 class="help_donate">
+            {{ .help_donate | markdownify }}
+          </h4>
+        </div>
+      </div>
+      <div class="row justify-content-center mt-20">
+        <div class="col text-center">
+          <a class="btn btn-main single-button effect-button" href="{{ "about" | absLangURL }}">
+            {{ .help_cta }}
+          </a>
+        </div>
+      </div>
+      {{"<!-- About section End -->" | safeHTML}}
+      {{ end }}
+
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row justify-content-center mt-30">
+        <div class="title text-center">
+          <h2>{{ .Params.MentionedIn }}</h2>
+          <span class="border"></span>
+        </div>
+        <div class="endorsements">
+          {{ $image := "/images/logos/le-point.svg" }}
+          <a href="https://www.lepoint.fr/" target="_blank">
+            <img src="{{ $image | absURL }}" alt="endorsed by Le Point" />
+          </a>
+          {{ $image := "/images/logos/start-up.ro.jpg" }}
+          <a href="https://www.start-up.ro" target="_blank">
+            <img src="{{ $image | absURL }}" alt="endorsed by start-up.ro" width="200" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5 -->
+  <section class="section-sm mt-20" id="gallery">
+    <div class="container">
+      <div class="title text-center">
+        <h2>{{ .Params.Section5 }}</h2>
+        <span class="border"></span>
+      </div>
+      <div class="row justify-content-center">
+        <iframe class="airtable-embed"
+          src="https://airtable.com/embed/shrz7gs2AUsBxqoG4?backgroundColor=blue&viewControls=on" frameborder="0"
+          onmousewheel="" width="100%" height="800" style="background: transparent;
+        border: 1px solid #ccc;"></iframe>
+      </div>
+    </div>
+  </section>
+</div>
+{{ end }}
