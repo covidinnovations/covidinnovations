@@ -16,6 +16,10 @@ description: >
   COVID Tenders is providing an open, public database of COVID-19 innovations. Suppliers of tech
   solutions can directly post their details online, and be openly searched and browsed by anyone who
   has a demand, in a peer-to-peer fashion.
+paragraph1: >
+  The COVID-19 pandemic creates urgent demand for specialized technologies in airports, quarantine zones, hospitals, logistics infrastructure, and prisons. Companies have devised solutions which can be replicated in other countries, granted that they can match and talk to the buyers directly.
+paragraph2: >
+  We want to facilitate the exchange of technology by opening up an open, public database of COVID-19 innovations. Suppliers of tech solutions can directly post their details online, and be openly searched and browsed by anyone who has a demand, in a peer-to-peer fashion.
 ---
 
 The COVID-19 pandemic creates urgent demand for specialized technologies in airports, quarantine zones,
